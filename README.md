@@ -17,12 +17,12 @@ Nakon vaše prijave bit će vam dodijeljen mentor s kojim ćete tijekom semestra
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Ime i prezime | dcuric@foi.hr | 0016124847 | dcuric
-Ime i prezime | istrmecki@foi.hr | 0016123439 | ivicastrmecki
-Ime i prezime | pcrncec@foi.hr | 0016129677 | pcrncec
+Domagoj Curić | dcuric@foi.hr | 0016124847 | dcuric
+Ivica Strmečki | istrmecki@foi.hr | 0016123439 | ivicastrmecki
+Patrik Črnčec | pcrncec@foi.hr | 0016129677 | pcrncec
 
 ## Opis domene
-Aplikacija „Clubbing“ služi prije svega za pregled različitih događanja u noćnim klubovima na području Grada Zagreba. Prije samog korištenja aplikacije potrebno je izraditi korisnički račun u aplikaciji. Prilikom izrade korisničkog računa potrebno je unijeti broj mobilnog telefona kako bi svaki korisnik imao jedan korisnički račun da bismo izbjegli neželjene radnje.
+Aplikacija „Clubbing“ služi prije svega za pregled različitih događanja u noćnim klubovima na području Grada Zagreba. Prije samog korištenja aplikacije potrebno je izraditi korisnički račun u aplikaciji. Prilikom izrade korisničkog računa potrebno je unijeti broj mobilnog telefona kako bi svaki korisnik imao jedan korisnički račun da bismo izbjegli zlouporabu rezervacija slobodnih mjesta.
 Kako se naša aplikacija bazira na pregledu različitih evenata u noćnim klubovima, možemo odabrati područje koje je u našoj domeni interesiranja te uključiti navođenje od trenutne lokacije do samog kluba. Uz sam pregled nadolazećih i događaja u tijeku, pruža mogućnost rezervacije mjesta u odabranom klubu. Za samu rezervaciju potrebno je prvo odabrati broj osoba koji planira prisustvovati događaju kako bi na temelju toga dobili pregled mogućih mjesta za rezervirati. 
 Od dodatnih mogućnosti nudi nam se pregled cjenika općenito i akcijske cijene za vrijeme događaja, galerija slika koju mogu ažurirati registrirani korisnici.
 
@@ -31,8 +31,12 @@ Umjesto ovih uputa opišite zahtjeve za funkcionalnošću programskog proizvoda.
 
 Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
-F01 | Login | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
-F02 | Pregled dnevnika | .... | ...
+F01 | Registracija korisnika i prijava  | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
+F02 | Pregled klubova, događaja i ponuda pića | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
+F03 | Pregled lokacije i navigacija do određenog kluba | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
+F04 | Pregled i rezervacija slobodnih mjesta | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
+F05 | Unos podataka administratora kluba | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
+F06 | Potvrđivanje rezervacije | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
 
 ## Tehnologije i oprema
 Umjesto ovih uputa jasno popišite sve tehnologije, alate i opremu koju ćete koristiti pri implementaciji vašeg rješenja. Ne zaboravite planirati korištenje tehnologija u aktivnostima kao što su projektni menadžment ili priprema dokumentacije. Tehnologije koje ćete koristiti bi trebale biti javno dostupne, a ako ih ne budemo obrađivali na vježbama u vašoj dokumentaciji ćete morati navesti način preuzimanja, instaliranja i korištenja onih tehnologija koje su neopbodne kako bi se vaš programski proizvod preveo i pokrenuo. Pazite da svi alati koje ćete koristiti moraju imati odgovarajuću licencu.
