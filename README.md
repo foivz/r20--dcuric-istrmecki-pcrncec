@@ -17,11 +17,14 @@ Nakon vaše prijave bit će vam dodijeljen mentor s kojim ćete tijekom semestra
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Ime i prezime | mojaadresa@foi.hr | 000000000 | githubuser
-Ime i prezime | ... | ... | ...
+Ime i prezime | dcuric@foi.hr | 0016124847 | dcuric
+Ime i prezime | istrmecki@foi.hr | 0016123439 | ivicastrmecki
+Ime i prezime | pcrncec@foi.hr | 0016129677 | pcrncec
 
 ## Opis domene
-Umjesto ovih uputa opišite domenu ili problem koji pokrivate vašim  projektom. Domena može biti proizvoljna, ali obratite pozornost da sukladno ishodima učenja, domena omogući primjenu zahtijevanih koncepata kako je to navedeno u sljedećem poglavlju. Priložite odgovarajuće skice gdje je to prikladno.
+Aplikacija „Clubbing“ služi prije svega za pregled različitih događanja u noćnim klubovima na području Grada Zagreba. Prije samog korištenja aplikacije potrebno je izraditi korisnički račun u aplikaciji. Prilikom izrade korisničkog računa potrebno je unijeti broj mobilnog telefona kako bi svaki korisnik imao jedan korisnički račun da bismo izbjegli neželjene radnje.
+Kako se naša aplikacija bazira na pregledu različitih evenata u noćnim klubovima, možemo odabrati područje koje je u našoj domeni interesiranja te uključiti navođenje od trenutne lokacije do samog kluba. Uz sam pregled nadolazećih i događaja u tijeku, pruža mogućnost rezervacije mjesta u odabranom klubu. Za samu rezervaciju potrebno je prvo odabrati broj osoba koji planira prisustvovati događaju kako bi na temelju toga dobili pregled mogućih mjesta za rezervirati. 
+Od dodatnih mogućnosti nudi nam se pregled cjenika općenito i akcijske cijene za vrijeme događaja, galerija slika koju mogu ažurirati registrirani korisnici.
 
 ## Specifikacija projekta
 Umjesto ovih uputa opišite zahtjeve za funkcionalnošću programskog proizvoda. Pobrojite osnovne funkcionalnosti i za svaku naznačite ime odgovornog člana tima. Opišite buduću arhitekturu programskog proizvoda. Obratite pozornost da bi arhitektura trebala biti višeslojna s odvojenom (dislociranom) bazom podatka. Također uzmite u obzir da bi svaki član tima treba biti odgovorana za otprilike 3 funkcionalnosti, te da bi opterećenje članova tima trebalo biti ujednačeno. Priložite odgovarajuće dijagrame i skice gdje je to prikladno. Funkcionalnosti sustava bobrojite u tablici ispod koristeći predložak koji slijedi:
