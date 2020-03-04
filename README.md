@@ -22,7 +22,7 @@ F01 | Registracija korisnika i prijava  | Korisnik prilikom prvog pokretanja apl
 F02 | Pregled klubova, događaja i ponuda pića | U aplikaciji nam se nudi pregled klubova, na području Grada Zagreba, u kojima će biti održani događaj ili je događaj u tijeku. | Ivica Strmečki
 F03 | Pregled lokacije i navigacija do određenog kluba | Korisnici aplikacije imaju mogućnost da za svaki klub koji se nalazi u aplikaciji vide njegovu lokaciju uz pomoć alata Google Maps te se uz pomoć toga u stvarnom vremenu može navigirati korisnika do željenog kluba. | Patrik Črnčec
 F04 | Pregled i rezervacija slobodnih mjesta | Korisnici imaju mogućnost pregled svih slobodnih mjesta u pojedinom klubu i rezervacije mjesta za jednu ili više osoba ukoliko određeni klub ima dovoljno mjesta. Aplikacija omogućuje i slanje obavijesti korisniku kad se oslobodi neko mjesto u njemu željenom klubu ili kad se kreira neki novi događaj u klubu. | Patrik Črnčec
-F05 | Unos podataka administratora kluba | Sučelje kojim administrator unutar same aplikacije ima ovlasti CRUD operacija prilikomn pregleda i rezervacija mjesta u klubu. | Doamgoj Curić
+F05 | Unos podataka administratora kluba | Sučelje kojim administrator unutar same aplikacije ima ovlasti CRUD operacija prilikomn pregleda i rezervacija mjesta u klubu. | Domagoj Curić
 F06 | Potvrđivanje rezervacije | Sučelje koje služi za potvrđivanje online rezervacije određenog mjesta u klubu. Administrator kluba može pregledati tko je rezervirao koje mjesto za koliko ljudi i samim time onda odobriti rezervaciju ili ne. | Domagoj Curić
 
 ## Tehnologije i oprema
