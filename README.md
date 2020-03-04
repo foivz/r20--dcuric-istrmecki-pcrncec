@@ -31,12 +31,12 @@ Umjesto ovih uputa opišite zahtjeve za funkcionalnošću programskog proizvoda.
 
 Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
-F01 | Registracija korisnika i prijava  | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
-F02 | Pregled klubova, događaja i ponuda pića | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
-F03 | Pregled lokacije i navigacija do određenog kluba | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
+F01 | Registracija korisnika i prijava  | Korisnik prilikom prvog pokretanja aplikacije mora izraditi korisnički račun. U našoj aplikaciji postoje dvije vrste korisnika. Korisnici aplikacije za pregled noćnih klubova i događaja u njima te administratori unutar samog kluba. Uz sam unos potrebnih korisničkih podataka, prilikom izrade korisničkog računa korisnik mora unijeti broj mobilnog telefona kako bi se izbjegla zlouporaba aplikacije. Nakon registracije, prijava u aplikaciju vrši se unosom korisničkog imena i odabrane lozinke.  | Zlatko Stapić
+F02 | Pregled klubova, događaja i ponuda pića | U aplikaciji nam se nudi pregled klubova, na području Grada Zagreba, u kojima će biti održani događaj ili je događaj u tijeku. | Zlatko Stapić
+F03 | Pregled lokacije i navigacija do određenog kluba | Korisnici aplikacije imaju mogućnost da za svaki klub koji se nalazi u aplikaciji vide njegovu lokaciju uz pomoć alata Google Maps te se uz pomoć toga u stvarnom vremenu može navigirati korisnika do željenog kluba. | Zlatko Stapić
 F04 | Pregled i rezervacija slobodnih mjesta | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
-F05 | Unos podataka administratora kluba | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
-F06 | Potvrđivanje rezervacije | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
+F05 | Unos podataka administratora kluba | Sučelje kojim administrator unutar same aplikacije ima ovlasti CRUD operacija prilikomn pregleda i rezervacija mjesta u klubu. | Zlatko Stapić
+F06 | Sučelje koje služi za potvrđivanje online rezervacije određenog mjesta u klubu. Administrator kluba može pregledati tko je rezervirao koje mjesto za koliko ljudi i samim time onda odobriti rezervaciju ili ne. | Zlatko Stapić
 
 ## Tehnologije i oprema
 Umjesto ovih uputa jasno popišite sve tehnologije, alate i opremu koju ćete koristiti pri implementaciji vašeg rješenja. Ne zaboravite planirati korištenje tehnologija u aktivnostima kao što su projektni menadžment ili priprema dokumentacije. Tehnologije koje ćete koristiti bi trebale biti javno dostupne, a ako ih ne budemo obrađivali na vježbama u vašoj dokumentaciji ćete morati navesti način preuzimanja, instaliranja i korištenja onih tehnologija koje su neopbodne kako bi se vaš programski proizvod preveo i pokrenuo. Pazite da svi alati koje ćete koristiti moraju imati odgovarajuću licencu.
