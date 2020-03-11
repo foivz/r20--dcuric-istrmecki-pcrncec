@@ -1,5 +1,5 @@
-# Sustav za upravljanje događajima noćnih klubova - CLUBBING
-
+# PI20-066 Sustav za upravljanje događajima noćnih klubova - CLUBBING
+mentor: Boris Tomaš
 
 ## Projektni tim
 
