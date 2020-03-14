@@ -1,0 +1,1 @@
+- 14.3.2020. prijava projekta: U redu, molim dodajte funkcionalnost filtriranje i pretraživanja klubova temeljem više kriterija (smislite ih), jedan od kriterija je sigurno vrsta glazbe. Dodajte i opciju ocjenjivanja (brojcano i tekstualno). Uklonite ponudu pića
