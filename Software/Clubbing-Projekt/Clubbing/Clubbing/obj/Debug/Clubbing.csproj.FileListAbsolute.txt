@@ -1,0 +1,195 @@
+C:\Users\Domagoj\Desktop\PI-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.exe.config
+C:\Users\Domagoj\Desktop\PI-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.exe
+C:\Users\Domagoj\Desktop\PI-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.pdb
+C:\Users\Domagoj\Desktop\PI-Projekt\Clubbing\Clubbing\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Domagoj\Desktop\PI-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csprojAssemblyReference.cache
+C:\Users\Domagoj\Desktop\PI-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Form1.resources
+C:\Users\Domagoj\Desktop\PI-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Properties.Resources.resources
+C:\Users\Domagoj\Desktop\PI-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.GenerateResource.cache
+C:\Users\Domagoj\Desktop\PI-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CoreCompileInputs.cache
+C:\Users\Domagoj\Desktop\PI-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CopyComplete
+C:\Users\Domagoj\Desktop\PI-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.exe
+C:\Users\Domagoj\Desktop\PI-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.pdb
+C:\Users\Domagoj\Desktop\PI-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forms.FormDashboard.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.exe.config
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.exe
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.pdb
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csprojAssemblyReference.cache
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.GlavnaForma.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.LoginForm.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Properties.Resources.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.GenerateResource.cache
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CoreCompileInputs.cache
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CopyComplete
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.exe
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.pdb
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forms.FormKlubovi.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forms.FormGalerijaSlika.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forms.FormDogadajiUKlubovima.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forms.FormObavijest.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forms.FormRezervacije.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csprojAssemblyReference.cache
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.LoginForm.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Properties.Resources.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.GenerateResource.cache
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CoreCompileInputs.cache
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.exe
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.pdb
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.exe.config
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.exe
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.pdb
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CopyComplete
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.FormaGlavniMeni.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajKlub.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajLokaciju.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajRecenziju.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaLokacija.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaKlub.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaGalerija.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajDogadjaj.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajStol.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDogadjaji.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaPregledSvihDogadjaja.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajRezervaciju.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaObavijesti.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaSveRezervacije.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaKlubovi.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csprojAssemblyReference.cache
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajDogadjaj.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajKlub.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajLokaciju.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajRecenziju.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajRezervaciju.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajStol.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDogadjaji.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaGalerija.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaKlub.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaKlubovi.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaLokacija.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaObavijesti.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaPregledSvihDogadjaja.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaSveRezervacije.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.FormaGlavniMeni.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.LoginForm.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Properties.Resources.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.GenerateResource.cache
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CoreCompileInputs.cache
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.exe
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.pdb
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.exe.config
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.exe
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.pdb
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CopyComplete
+C:\Users\Domagoj\Desktop\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormHelpF1.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.exe.config
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.exe
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.pdb
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csprojAssemblyReference.cache
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajDogadjaj.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajKlub.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajLokaciju.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajRecenziju.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajRezervaciju.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajStol.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDogadjaji.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaGalerija.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaKlub.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaKlubovi.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaLokacija.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaObavijesti.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaPregledSvihDogadjaja.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaSveRezervacije.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.FormaGlavniMeni.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.LoginForm.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Properties.Resources.resources
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.GenerateResource.cache
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CoreCompileInputs.cache
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CopyComplete
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.exe
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.pdb
+C:\Users\Patrik\Downloads\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaHelpF1.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csprojAssemblyReference.cache
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajDogadjaj.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajKlub.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajLokaciju.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajRecenziju.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajRezervaciju.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajStol.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDogadjaji.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaGalerija.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaKlub.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaKlubovi.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaLokacija.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaObavijesti.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaPregledSvihDogadjaja.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaSveRezervacije.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.FormaGlavniMeni.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.LoginForm.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaHelpF1.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Properties.Resources.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.GenerateResource.cache
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CoreCompileInputs.cache
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.exe
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1_faza\Clubbing-Projekt\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.pdb
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.exe.config
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.exe
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.pdb
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csprojAssemblyReference.cache
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajDogadjaj.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajKlub.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajLokaciju.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajRecenziju.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajRezervaciju.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajStol.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDogadjaji.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaGalerija.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaKlub.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaKlubovi.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaLokacija.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaObavijesti.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaPregledSvihDogadjaja.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaSveRezervacije.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.FormaGlavniMeni.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.LoginForm.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaHelpF1.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Properties.Resources.resources
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.GenerateResource.cache
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CoreCompileInputs.cache
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CopyComplete
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.exe
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.pdb
+C:\Users\Patrik\Desktop\FOI ucenje\6. Semestar\PI\Projekt\Aplikacija\Clubbing-Projekt-ZadnjaVerzijaDomagoj\Clubbing-Projekt_FINAL_1faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaRegistracija.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.exe.config
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.exe
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\Clubbing.pdb
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csprojAssemblyReference.cache
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajDogadjaj.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajKlub.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajLokaciju.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajRecenziju.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajRezervaciju.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDodajStol.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaDogadjaji.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaGalerija.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaKlub.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaKlubovi.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaLokacija.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaObavijesti.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaPregledSvihDogadjaja.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaRegistracija.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaSveRezervacije.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.FormaGlavniMeni.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.LoginForm.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Forme.FormaHelpF1.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.Properties.Resources.resources
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.GenerateResource.cache
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CoreCompileInputs.cache
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.csproj.CopyComplete
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.exe
+C:\Users\Domagoj\Desktop\Clubbing-Projekt_FINAL_faza\Clubbing-Projekt\Clubbing\Clubbing\obj\Debug\Clubbing.pdb
