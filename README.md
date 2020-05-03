@@ -32,3 +32,4 @@ F06 | Potvrđivanje rezervacije | Sučelje koje služi za potvrđivanje online r
 - Microsoft Office
 - Visual Paradigm Community Edition
 - Github
+- Microsoft Project
