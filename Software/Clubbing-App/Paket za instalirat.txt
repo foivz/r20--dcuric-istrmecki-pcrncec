@@ -1,2 +1,0 @@
-Prilikom pokretanja App 'Clubbing'treba instalirati ovaj paket: ( FontAwesome.Sharp )
-Desni klik na projekt 'Clubbing' zatim 'Manage NuGet Packages...' nakon toga se u search bar upise 'FontAwesome.Sharp' i instalira taj paket
