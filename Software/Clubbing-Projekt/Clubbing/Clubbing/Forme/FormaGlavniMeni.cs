@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using Clubbing.Forme;
+using Clubbing.Modeli;
 
 namespace Clubbing
 {
@@ -28,6 +29,19 @@ namespace Clubbing
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+        }
+        private void FormaGlavniMeni_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+            string ime = Korisnik.PrijavljeniKorisnik.Ime;
+            string prezime = Korisnik.PrijavljeniKorisnik.Prezime;
+            string korime = Korisnik.PrijavljeniKorisnik.KorisnickoIme;
+            labelPrijavljen.Text += ime + " " + prezime + " (" + korime + ")";
+
+            // UCITAVANJE PODATAKA IZ BAZE
+            Klub.PostaviSveKlubove();
+            Korisnik.PrijavljeniKorisnik.PopuniPraceneKlubove();
+            Korisnik.PrijavljeniKorisnik.PopuniRezervacije();
         }
         private struct RGBColors
         {
@@ -89,12 +103,6 @@ namespace Clubbing
             formaDijete.Show();
             labelTitleChildForm.Text = formaDijete.Text;
         }
-
-        private void PanelMeni_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void IconButtonKlubovi_Click(object sender, EventArgs e)
         {
             OdabraniIzbornik(sender, RGBColors.color1);
@@ -120,15 +128,12 @@ namespace Clubbing
 
         private void IconButtonOdjava_Click(object sender, EventArgs e)
         {
+            Korisnik.PrijavljeniKorisnik = null;
             this.Hide();
-            LoginForm loginForm = new LoginForm();
-            loginForm.ShowDialog();
+            FormaPrijava formaPrijava = new FormaPrijava();
+            formaPrijava.ShowDialog();
         }
 
-        private void ButtonHome_Click(object sender, EventArgs e)
-        {
-
-        }
         private void ButtonHome_Click_1(object sender, EventArgs e)
         {
             if (FormaDijete != null)
@@ -144,7 +149,7 @@ namespace Clubbing
             BtnLijeviDio.Visible = false;
             trenutnaForma.IconChar = IconChar.Home;
             trenutnaForma.IconColor = Color.Gainsboro;
-            labelTitleChildForm.Text = "Home";
+            labelTitleChildForm.Text = "Clubbing";
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -175,23 +180,11 @@ namespace Clubbing
         {
             WindowState = FormWindowState.Minimized;
         }
-        private void PostaviKlubAdmina()
-        {
-            // dohvaca se iz baze klub za prijavljenog admina i taj klub se pridodaje statičkoj varijabli klubAdmina (klasa Klub)
-            Modeli.Klub.KlubAdmina = null;
-        }
-
         private void IconButtonHelp_Click(object sender, EventArgs e)
         {
             FormaHelpF1 formHelpF1 = new FormaHelpF1();
             formHelpF1.Show();
         }
-
-        private void FormaGlavniMeni_Load(object sender, EventArgs e)
-        {
-            this.KeyPreview = true;
-        }
-
         private void FormaGlavniMeni_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F1)

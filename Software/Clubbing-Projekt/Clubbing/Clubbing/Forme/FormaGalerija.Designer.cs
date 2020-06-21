@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.labelNaslov = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.BtnDodajSliku = new System.Windows.Forms.Button();
             this.BtnObrisiSliku = new System.Windows.Forms.Button();
             this.BtnPrethodna = new System.Windows.Forms.Button();
             this.BtnSljedecaSlika = new System.Windows.Forms.Button();
             this.BtnPrethodnaSlika = new System.Windows.Forms.Button();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // labelNaslov
@@ -42,24 +44,19 @@
             this.labelNaslov.AutoSize = true;
             this.labelNaslov.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNaslov.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelNaslov.Location = new System.Drawing.Point(40, 26);
+            this.labelNaslov.Location = new System.Drawing.Point(30, 21);
+            this.labelNaslov.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNaslov.Name = "labelNaslov";
-            this.labelNaslov.Size = new System.Drawing.Size(75, 20);
+            this.labelNaslov.Size = new System.Drawing.Size(65, 17);
             this.labelNaslov.TabIndex = 0;
             this.labelNaslov.Text = "Galerija";
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(44, 74);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(709, 253);
-            this.panel1.TabIndex = 1;
-            // 
             // BtnDodajSliku
             // 
-            this.BtnDodajSliku.Location = new System.Drawing.Point(44, 345);
+            this.BtnDodajSliku.Location = new System.Drawing.Point(33, 280);
+            this.BtnDodajSliku.Margin = new System.Windows.Forms.Padding(2);
             this.BtnDodajSliku.Name = "BtnDodajSliku";
-            this.BtnDodajSliku.Size = new System.Drawing.Size(111, 39);
+            this.BtnDodajSliku.Size = new System.Drawing.Size(83, 32);
             this.BtnDodajSliku.TabIndex = 2;
             this.BtnDodajSliku.Text = "Dodaj sliku";
             this.BtnDodajSliku.UseVisualStyleBackColor = true;
@@ -67,9 +64,10 @@
             // 
             // BtnObrisiSliku
             // 
-            this.BtnObrisiSliku.Location = new System.Drawing.Point(178, 345);
+            this.BtnObrisiSliku.Location = new System.Drawing.Point(134, 280);
+            this.BtnObrisiSliku.Margin = new System.Windows.Forms.Padding(2);
             this.BtnObrisiSliku.Name = "BtnObrisiSliku";
-            this.BtnObrisiSliku.Size = new System.Drawing.Size(111, 39);
+            this.BtnObrisiSliku.Size = new System.Drawing.Size(83, 32);
             this.BtnObrisiSliku.TabIndex = 3;
             this.BtnObrisiSliku.Text = "Obriši sliku";
             this.BtnObrisiSliku.UseVisualStyleBackColor = true;
@@ -77,9 +75,10 @@
             // 
             // BtnPrethodna
             // 
-            this.BtnPrethodna.Location = new System.Drawing.Point(28, 425);
+            this.BtnPrethodna.Location = new System.Drawing.Point(21, 345);
+            this.BtnPrethodna.Margin = new System.Windows.Forms.Padding(2);
             this.BtnPrethodna.Name = "BtnPrethodna";
-            this.BtnPrethodna.Size = new System.Drawing.Size(111, 39);
+            this.BtnPrethodna.Size = new System.Drawing.Size(83, 32);
             this.BtnPrethodna.TabIndex = 4;
             this.BtnPrethodna.Text = "Povratak";
             this.BtnPrethodna.UseVisualStyleBackColor = true;
@@ -87,9 +86,10 @@
             // 
             // BtnSljedecaSlika
             // 
-            this.BtnSljedecaSlika.Location = new System.Drawing.Point(669, 374);
+            this.BtnSljedecaSlika.Location = new System.Drawing.Point(502, 304);
+            this.BtnSljedecaSlika.Margin = new System.Windows.Forms.Padding(2);
             this.BtnSljedecaSlika.Name = "BtnSljedecaSlika";
-            this.BtnSljedecaSlika.Size = new System.Drawing.Size(83, 37);
+            this.BtnSljedecaSlika.Size = new System.Drawing.Size(62, 30);
             this.BtnSljedecaSlika.TabIndex = 5;
             this.BtnSljedecaSlika.Text = "->";
             this.BtnSljedecaSlika.UseVisualStyleBackColor = true;
@@ -97,31 +97,50 @@
             // 
             // BtnPrethodnaSlika
             // 
-            this.BtnPrethodnaSlika.Location = new System.Drawing.Point(555, 374);
+            this.BtnPrethodnaSlika.Location = new System.Drawing.Point(416, 304);
+            this.BtnPrethodnaSlika.Margin = new System.Windows.Forms.Padding(2);
             this.BtnPrethodnaSlika.Name = "BtnPrethodnaSlika";
-            this.BtnPrethodnaSlika.Size = new System.Drawing.Size(83, 37);
+            this.BtnPrethodnaSlika.Size = new System.Drawing.Size(62, 30);
             this.BtnPrethodnaSlika.TabIndex = 6;
             this.BtnPrethodnaSlika.Text = "<-";
             this.BtnPrethodnaSlika.UseVisualStyleBackColor = true;
             this.BtnPrethodnaSlika.Click += new System.EventHandler(this.BtnPrethodnaSlika_Click);
             // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog";
+            this.openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png";
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.Location = new System.Drawing.Point(33, 60);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(531, 192);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 7;
+            this.pictureBox.TabStop = false;
+            this.pictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseDown);
+            this.pictureBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseUp);
+            // 
             // FormaGalerija
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(800, 476);
+            this.ClientSize = new System.Drawing.Size(600, 387);
+            this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.BtnPrethodnaSlika);
             this.Controls.Add(this.BtnSljedecaSlika);
             this.Controls.Add(this.BtnPrethodna);
             this.Controls.Add(this.BtnObrisiSliku);
             this.Controls.Add(this.BtnDodajSliku);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelNaslov);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormaGalerija";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormaGalerija";
             this.Load += new System.EventHandler(this.FormaGalerija_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,11 +149,12 @@
         #endregion
 
         private System.Windows.Forms.Label labelNaslov;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BtnDodajSliku;
         private System.Windows.Forms.Button BtnObrisiSliku;
         private System.Windows.Forms.Button BtnPrethodna;
         private System.Windows.Forms.Button BtnSljedecaSlika;
         private System.Windows.Forms.Button BtnPrethodnaSlika;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.PictureBox pictureBox;
     }
 }

@@ -35,11 +35,12 @@
             this.labelUsername = new System.Windows.Forms.Label();
             this.textBoxLozinka = new System.Windows.Forms.TextBox();
             this.textBoxKorisnickoIme = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelLozinka = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxLozinka2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelPotvrdaLoznike = new System.Windows.Forms.Label();
             this.BtnOdustani = new FontAwesome.Sharp.IconButton();
+            this.checkBoxAdmin = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // BtnRegistracija
@@ -50,7 +51,7 @@
             this.BtnRegistracija.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BtnRegistracija.IconColor = System.Drawing.Color.Black;
             this.BtnRegistracija.IconSize = 16;
-            this.BtnRegistracija.Location = new System.Drawing.Point(31, 516);
+            this.BtnRegistracija.Location = new System.Drawing.Point(43, 574);
             this.BtnRegistracija.Name = "BtnRegistracija";
             this.BtnRegistracija.Rotation = 0D;
             this.BtnRegistracija.Size = new System.Drawing.Size(144, 38);
@@ -63,7 +64,7 @@
             // 
             this.textBoxPrezime.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxPrezime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPrezime.Location = new System.Drawing.Point(86, 168);
+            this.textBoxPrezime.Location = new System.Drawing.Point(84, 173);
             this.textBoxPrezime.Name = "textBoxPrezime";
             this.textBoxPrezime.Size = new System.Drawing.Size(251, 30);
             this.textBoxPrezime.TabIndex = 10;
@@ -72,7 +73,7 @@
             // 
             this.textBoxIme.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxIme.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxIme.Location = new System.Drawing.Point(86, 69);
+            this.textBoxIme.Location = new System.Drawing.Point(84, 74);
             this.textBoxIme.Name = "textBoxIme";
             this.textBoxIme.Size = new System.Drawing.Size(251, 30);
             this.textBoxIme.TabIndex = 9;
@@ -84,7 +85,7 @@
             this.labelPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPassword.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelPassword.Location = new System.Drawing.Point(81, 122);
+            this.labelPassword.Location = new System.Drawing.Point(79, 126);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(83, 25);
             this.labelPassword.TabIndex = 8;
@@ -96,7 +97,7 @@
             this.labelUsername.AutoSize = true;
             this.labelUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsername.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelUsername.Location = new System.Drawing.Point(81, 26);
+            this.labelUsername.Location = new System.Drawing.Point(79, 30);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(44, 25);
             this.labelUsername.TabIndex = 7;
@@ -106,7 +107,7 @@
             // 
             this.textBoxLozinka.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLozinka.Location = new System.Drawing.Point(90, 350);
+            this.textBoxLozinka.Location = new System.Drawing.Point(88, 355);
             this.textBoxLozinka.Name = "textBoxLozinka";
             this.textBoxLozinka.Size = new System.Drawing.Size(251, 30);
             this.textBoxLozinka.TabIndex = 16;
@@ -115,23 +116,23 @@
             // 
             this.textBoxKorisnickoIme.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxKorisnickoIme.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxKorisnickoIme.Location = new System.Drawing.Point(86, 256);
+            this.textBoxKorisnickoIme.Location = new System.Drawing.Point(84, 261);
             this.textBoxKorisnickoIme.Name = "textBoxKorisnickoIme";
             this.textBoxKorisnickoIme.Size = new System.Drawing.Size(251, 30);
             this.textBoxKorisnickoIme.TabIndex = 15;
             // 
-            // label1
+            // labelLozinka
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(85, 308);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 25);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Lozinka";
+            this.labelLozinka.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelLozinka.AutoSize = true;
+            this.labelLozinka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.labelLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLozinka.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelLozinka.Location = new System.Drawing.Point(83, 313);
+            this.labelLozinka.Name = "labelLozinka";
+            this.labelLozinka.Size = new System.Drawing.Size(80, 25);
+            this.labelLozinka.TabIndex = 14;
+            this.labelLozinka.Text = "Lozinka";
             // 
             // label2
             // 
@@ -139,7 +140,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(81, 213);
+            this.label2.Location = new System.Drawing.Point(79, 218);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(139, 25);
             this.label2.TabIndex = 13;
@@ -149,23 +150,23 @@
             // 
             this.textBoxLozinka2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxLozinka2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLozinka2.Location = new System.Drawing.Point(90, 440);
+            this.textBoxLozinka2.Location = new System.Drawing.Point(88, 445);
             this.textBoxLozinka2.Name = "textBoxLozinka2";
             this.textBoxLozinka2.Size = new System.Drawing.Size(251, 30);
             this.textBoxLozinka2.TabIndex = 18;
             // 
-            // label3
+            // labelPotvrdaLoznike
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(85, 398);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 25);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Potvrdi lozinku";
+            this.labelPotvrdaLoznike.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelPotvrdaLoznike.AutoSize = true;
+            this.labelPotvrdaLoznike.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.labelPotvrdaLoznike.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPotvrdaLoznike.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelPotvrdaLoznike.Location = new System.Drawing.Point(83, 403);
+            this.labelPotvrdaLoznike.Name = "labelPotvrdaLoznike";
+            this.labelPotvrdaLoznike.Size = new System.Drawing.Size(138, 25);
+            this.labelPotvrdaLoznike.TabIndex = 17;
+            this.labelPotvrdaLoznike.Text = "Potvrdi lozinku";
             // 
             // BtnOdustani
             // 
@@ -175,7 +176,7 @@
             this.BtnOdustani.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BtnOdustani.IconColor = System.Drawing.Color.Black;
             this.BtnOdustani.IconSize = 16;
-            this.BtnOdustani.Location = new System.Drawing.Point(258, 516);
+            this.BtnOdustani.Location = new System.Drawing.Point(257, 574);
             this.BtnOdustani.Name = "BtnOdustani";
             this.BtnOdustani.Rotation = 0D;
             this.BtnOdustani.Size = new System.Drawing.Size(140, 38);
@@ -184,18 +185,31 @@
             this.BtnOdustani.UseVisualStyleBackColor = true;
             this.BtnOdustani.Click += new System.EventHandler(this.BtnOdustani_Click);
             // 
+            // checkBoxAdmin
+            // 
+            this.checkBoxAdmin.AutoSize = true;
+            this.checkBoxAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAdmin.ForeColor = System.Drawing.Color.White;
+            this.checkBoxAdmin.Location = new System.Drawing.Point(128, 512);
+            this.checkBoxAdmin.Name = "checkBoxAdmin";
+            this.checkBoxAdmin.Size = new System.Drawing.Size(148, 29);
+            this.checkBoxAdmin.TabIndex = 21;
+            this.checkBoxAdmin.Text = "Administrator";
+            this.checkBoxAdmin.UseVisualStyleBackColor = true;
+            // 
             // FormaRegistracija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.ClientSize = new System.Drawing.Size(457, 579);
+            this.ClientSize = new System.Drawing.Size(457, 641);
+            this.Controls.Add(this.checkBoxAdmin);
             this.Controls.Add(this.BtnOdustani);
             this.Controls.Add(this.textBoxLozinka2);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelPotvrdaLoznike);
             this.Controls.Add(this.textBoxLozinka);
             this.Controls.Add(this.textBoxKorisnickoIme);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelLozinka);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnRegistracija);
             this.Controls.Add(this.textBoxPrezime);
@@ -219,10 +233,11 @@
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.TextBox textBoxLozinka;
         private System.Windows.Forms.TextBox textBoxKorisnickoIme;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelLozinka;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxLozinka2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelPotvrdaLoznike;
         private FontAwesome.Sharp.IconButton BtnOdustani;
+        private System.Windows.Forms.CheckBox checkBoxAdmin;
     }
 }

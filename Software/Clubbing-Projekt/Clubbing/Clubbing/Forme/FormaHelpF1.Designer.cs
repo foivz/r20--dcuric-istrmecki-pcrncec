@@ -40,7 +40,7 @@
             this.TextBoxHelpF1.Multiline = true;
             this.TextBoxHelpF1.Name = "TextBoxHelpF1";
             this.TextBoxHelpF1.ReadOnly = true;
-            this.TextBoxHelpF1.Size = new System.Drawing.Size(559, 509);
+            this.TextBoxHelpF1.Size = new System.Drawing.Size(668, 706);
             this.TextBoxHelpF1.TabIndex = 0;
             // 
             // BtnOk
@@ -49,7 +49,7 @@
             this.BtnOk.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BtnOk.IconColor = System.Drawing.Color.Black;
             this.BtnOk.IconSize = 16;
-            this.BtnOk.Location = new System.Drawing.Point(228, 543);
+            this.BtnOk.Location = new System.Drawing.Point(281, 735);
             this.BtnOk.Name = "BtnOk";
             this.BtnOk.Rotation = 0D;
             this.BtnOk.Size = new System.Drawing.Size(113, 41);
@@ -63,7 +63,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(583, 596);
+            this.ClientSize = new System.Drawing.Size(692, 812);
             this.Controls.Add(this.BtnOk);
             this.Controls.Add(this.TextBoxHelpF1);
             this.Name = "FormaHelpF1";

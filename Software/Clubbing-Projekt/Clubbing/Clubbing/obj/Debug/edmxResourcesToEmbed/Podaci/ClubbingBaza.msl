@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PI20_066_DBModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Dogadjajs">
+      <EntityTypeMapping TypeName="PI20_066_DBModel.Dogadjaj">
+        <MappingFragment StoreEntitySet="Dogadjaj">
+          <ScalarProperty Name="id_dogadjaj" ColumnName="id_dogadjaj" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="opis" ColumnName="opis" />
+          <ScalarProperty Name="datum_pocetka" ColumnName="datum_pocetka" />
+          <ScalarProperty Name="datum_zavrsetka" ColumnName="datum_zavrsetka" />
+          <ScalarProperty Name="cijena_ulaznice" ColumnName="cijena_ulaznice" />
+          <ScalarProperty Name="max_rezervacija" ColumnName="max_rezervacija" />
+          <ScalarProperty Name="fk_klub" ColumnName="fk_klub" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Klubs">
+      <EntityTypeMapping TypeName="PI20_066_DBModel.Klub">
+        <MappingFragment StoreEntitySet="Klub">
+          <ScalarProperty Name="id_klub" ColumnName="id_klub" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="max_kapacitet" ColumnName="max_kapacitet" />
+          <ScalarProperty Name="logo" ColumnName="logo" />
+          <ScalarProperty Name="fk_zanr" ColumnName="fk_zanr" />
+          <ScalarProperty Name="fk_lokacija" ColumnName="fk_lokacija" />
+          <ScalarProperty Name="fk_admin" ColumnName="fk_admin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Korisniks">
+      <EntityTypeMapping TypeName="PI20_066_DBModel.Korisnik">
+        <MappingFragment StoreEntitySet="Korisnik">
+          <ScalarProperty Name="id_korisnik" ColumnName="id_korisnik" />
+          <ScalarProperty Name="ime" ColumnName="ime" />
+          <ScalarProperty Name="prezime" ColumnName="prezime" />
+          <ScalarProperty Name="korisnicko_ime" ColumnName="korisnicko_ime" />
+          <ScalarProperty Name="lozinka" ColumnName="lozinka" />
+          <ScalarProperty Name="admin" ColumnName="admin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lokacijas">
+      <EntityTypeMapping TypeName="PI20_066_DBModel.Lokacija">
+        <MappingFragment StoreEntitySet="Lokacija">
+          <ScalarProperty Name="id_lokacija" ColumnName="id_lokacija" />
+          <ScalarProperty Name="grad" ColumnName="grad" />
+          <ScalarProperty Name="ulica" ColumnName="ulica" />
+          <ScalarProperty Name="postanski_broj" ColumnName="postanski_broj" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Obavijests">
+      <EntityTypeMapping TypeName="PI20_066_DBModel.Obavijest">
+        <MappingFragment StoreEntitySet="Obavijest">
+          <ScalarProperty Name="id_obavijest" ColumnName="id_obavijest" />
+          <ScalarProperty Name="opis" ColumnName="opis" />
+          <ScalarProperty Name="datum_obavijesti" ColumnName="datum_obavijesti" />
+          <ScalarProperty Name="fk_klub" ColumnName="fk_klub" />
+          <ScalarProperty Name="vrsta" ColumnName="vrsta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pratis">
+      <EntityTypeMapping TypeName="PI20_066_DBModel.Prati">
+        <MappingFragment StoreEntitySet="Prati">
+          <ScalarProperty Name="fk_klub" ColumnName="fk_klub" />
+          <ScalarProperty Name="fk_korisnik" ColumnName="fk_korisnik" />
+          <ScalarProperty Name="datum" ColumnName="datum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Recenzijas">
+      <EntityTypeMapping TypeName="PI20_066_DBModel.Recenzija">
+        <MappingFragment StoreEntitySet="Recenzija">
+          <ScalarProperty Name="id_recenzija" ColumnName="id_recenzija" />
+          <ScalarProperty Name="ocjena" ColumnName="ocjena" />
+          <ScalarProperty Name="opis" ColumnName="opis" />
+          <ScalarProperty Name="fk_dogadjaj" ColumnName="fk_dogadjaj" />
+          <ScalarProperty Name="fk_klub" ColumnName="fk_klub" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rezervacijas">
+      <EntityTypeMapping TypeName="PI20_066_DBModel.Rezervacija">
+        <MappingFragment StoreEntitySet="Rezervacija">
+          <ScalarProperty Name="id_rezervacija" ColumnName="id_rezervacija" />
+          <ScalarProperty Name="broj_ljudi" ColumnName="broj_ljudi" />
+          <ScalarProperty Name="datum_rezervacije" ColumnName="datum_rezervacije" />
+          <ScalarProperty Name="fk_korisnik" ColumnName="fk_korisnik" />
+          <ScalarProperty Name="fk_stol" ColumnName="fk_stol" />
+          <ScalarProperty Name="fk_status" ColumnName="fk_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Slikas">
+      <EntityTypeMapping TypeName="PI20_066_DBModel.Slika">
+        <MappingFragment StoreEntitySet="Slika">
+          <ScalarProperty Name="id_slika" ColumnName="id_slika" />
+          <ScalarProperty Name="slika1" ColumnName="slika" />
+          <ScalarProperty Name="fk_dogadjaj" ColumnName="fk_dogadjaj" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusRezervacijes">
+      <EntityTypeMapping TypeName="PI20_066_DBModel.StatusRezervacije">
+        <MappingFragment StoreEntitySet="StatusRezervacije">
+          <ScalarProperty Name="id_status" ColumnName="id_status" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stols">
+      <EntityTypeMapping TypeName="PI20_066_DBModel.Stol">
+        <MappingFragment StoreEntitySet="Stol">
+          <ScalarProperty Name="id_stol" ColumnName="id_stol" />
+          <ScalarProperty Name="naziv_lokacije" ColumnName="naziv_lokacije" />
+          <ScalarProperty Name="max_mjesta" ColumnName="max_mjesta" />
+          <ScalarProperty Name="fk_dogadjaj" ColumnName="fk_dogadjaj" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zanrs">
+      <EntityTypeMapping TypeName="PI20_066_DBModel.Zanr">
+        <MappingFragment StoreEntitySet="Zanr">
+          <ScalarProperty Name="id_zanr" ColumnName="id_zanr" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

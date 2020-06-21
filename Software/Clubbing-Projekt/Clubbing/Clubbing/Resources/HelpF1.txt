@@ -1,13 +1,43 @@
-1.Klubovi
+﻿1.Klubovi
+Korisnik može prema već postojećim ocjenema i prema žanru glazbe pretraživati klubove.
+
+Opcija odabira - Korisnik pritišće gumb "Klubovi" te mu se daje mogućnost pretraživanja klubova po ocjenam i po žanru glazbe.
+Otvori klub	- Pritiskom na gumb "Otvori klub" otvara se nova forma koja prikazuje ime kluba, kapacitet kluba, admina kluba te sliku loga kluba.
+Dodaj recenziju - Pritiskom na gumb "Dodaj recenziju" u formi "Otvori klub" korisnik će dobiti mogućnost ostaviti ocjenu za klub i napisati kratak opis.
+Zaprati klub - Pritiskom na gumb "Zaprati klub" u formi "Otvori klub" Korisnik će moći zapratiti klub i na taj način dobivati obavjesti o klubu i njegovim događajima.
+Prikaži lokaciju - Pritiskom na gumb "Prikaži lokaciju" u formi "Otvori klub" korisnik može vidjeti na Google karti gdje se nalazi taj klub.
+Pregled događaja - Pritiskom na gumb "Pregled događaja" u formi "Otvori klub" korisnik može vidjeti sve događaje za taj odabrani klub i može pogledati dogažaje koji su završili i koji su nadolazeći.Također tu će biti i opcija za rezervaciju, prikazati galeriju.
+Dodaj klub - Opcijom "Dodaj klub" administrator može dodati tj otvoriti klub u aplikaciji koji će biti vidljiv korisnicima. I naravno svaki admin sa jednim računom može imati samo jedan klub otvoren u aplikaciji.
+Obriši klub - Klikom na opciju "Obriši klub" Admin tog kluba ga može obrisati, ne može ga obrisati niti jedan drugi admin.
 
 
 2.Dogadaji u klubovima
+Korisnik može filtrirati događaje. Ocijeniti odabrani događaj te pogledati galeriju slika kluba sa prijašnjih događaja. Doka admin kluba može upravljati događajima svoga kluba.
+
+Pregled svih događaja - Pritiskom na gumb "Pregled svih događaja" otvara se nova forma u kojoj korisnik može vidjeti sve događaje, te ih i filtrirati prema završenim i nadolazećim. Administrator u toj formi ne može rezervirati događaje u svome vlastitom klubu.
+Ocijeni događaj - Pritiskom na gumb "Ocijeni događaj" korisnik može ocijeniti odabrani događaj. Administrator svoje događaje ne može ocijeniti ali ostale može.
+Pogledaj galeriju slika	- Odabirom na ovu opciju "Pogledaj galeriju slika za odabrani klub korisnik može pogledati slike kluba. Administrator tog kluba može dodati ili obrisati slike, ali samo svog kluba, slike ostalih klubova može gledati isto kao i obični korisnici.
+Dodaj događaj - Ovu opciju mogu koristiti samo administratori. Odabirom na Opciju "Dodaj događaj" administrator kluba može kreirati novi događaj za svoj klub i tako unijeti podatke o tom događaju koji koriste korisnicima kao osnovne informacije.
+Obriši događaj - "Obriši događaj" tu opciju mogu koristiti administratori i to samo za svoj odabrani događaj, dakle svaki administrator može obrisati svoj događaj koji su oni kreirali.
+Uredi događaj - Pritiskom na "Uredi događaj" administrator tog kluba može svoj događaj urediti i izmijeniti podatke o tom događaju.
+Dodaj stol - Administrator ovom opcijom može dodati još stolova za svoj događaj i reći koji je kapacitet osoba za stol i lokaciju u klubu.
 
 
 3.Rezervacije
+Korisnik može filtrirati rezervacije. Pregledavati dostupne događaje te ih naposljetku i rezervirati.
+
+Pregled dostupnih događaja za rezervaciju - Pregled dostupnih događaja za rezervaciju otvorit će se nova forma u kojoj korisnik može rezervirati stol za taj događaj i napisati koliko ljudi ide na taj događaj, te odabrati opciju gdje želi da bude taj stol. Može odabrati da mu se prikaže galerija slika tog kluba.
+Prihvati Rezervaciju - Administrator može potvrditi odabranu rezervaciju za svoj događaj, te kad se jednom odabere ova opcija za pojedinu rezervaciju više druga opcija za promjenu nije dostupna.
+Odbij rezervaciju - Administrator može odbiti rezervaciju za svoj događaj, te kad se jednom odabere ova opcija za pojedinu rezervaciju više druga opcija za promjenu nije dostupna.
 
 
 4.Obavjesti
+Korisnik u opciji obavjesti može primati obavijesti o događajima klubova koje je zapratio. Dok administratorima stižu obavijesti ocjena članova koji ocijene događaje i klub.
+
+Pošalji obavijest - Ovu opciju ima samo administrator i on može svim svojim pratiocima poslati obavijest ili nekakvu poruku koju smatra da bi svi korisnici koji su zapratili klub trebali znati.
 
 
 5.Odjava
+Pritiskom na gumb odjava i korisnik i administrator će se odjaviti iz aplikacije, te će ih vratiti na početnu stranicu gdje se mogu prijaviti i registrirati ponovo.
+
+Odjava - Pritiskom na gumb "Odjava" i korisnici i administratori će biti izbačeni iz aplikacije te će im se otvoriti forma za prijavu i registraciju.

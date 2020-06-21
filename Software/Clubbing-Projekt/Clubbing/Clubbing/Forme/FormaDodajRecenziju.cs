@@ -13,8 +13,6 @@ namespace Clubbing.Forme
 {
     public partial class FormaDodajRecenziju : Form
     {
-        private int inputOcjena = -1;
-        private string inputOpis = null;
         private bool zaKlub;
         public FormaDodajRecenziju(bool zaKlub)
         {
@@ -31,25 +29,52 @@ namespace Clubbing.Forme
             if (!string.IsNullOrEmpty(textBoxOcjena.Text) && !string.IsNullOrEmpty(textBoxOpis.Text)) {
                 try
                 {
-                    inputOcjena = Convert.ToInt32(textBoxOcjena.Text);
-                    inputOpis = textBoxOpis.Text;
-                    this.Close();
+                    int inputOcjena = Convert.ToInt32(textBoxOcjena.Text);
+                    string inputOpis = textBoxOpis.Text;
+                    Recenzija recenzija = new Recenzija(inputOcjena, inputOpis, zaKlub);
+                    if (zaKlub)
+                    {
+                        int id = recenzija.DodajRecenzijuKlubUBazu();
+                        recenzija.IDRecenzija = id;
+                        Klub.trenutniKlub.Recenzije.Add(recenzija);
+                    }
+                    else
+                    {
+                        int id = recenzija.DodajRecenzijuDogadjajUBazu();
+                        recenzija.IDRecenzija = id;
+                        Dogadjaj.trenutniDogadjaj.RecenzijeDogadjaja.Add(recenzija);
+                    }
+                    Obavijest obavijest = new Obavijest(GenerirajOpisObavijesti(recenzija, zaKlub), DateTime.Now);
+                    obavijest.DodajObavijestUBazu(false);
                 }
                 catch
                 {
                     MessageBox.Show("Ocjena mora biti broj!");
                 }
+                this.Close();
             }
             else
             {
                 MessageBox.Show("Niste unijeli sve podatke!");
             }
-            
         }
 
         private void BtnOdustani_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        private string GenerirajOpisObavijesti(Recenzija recenzija, bool zaKlub)
+        {
+            string punoImeKorisnika = Korisnik.PrijavljeniKorisnik.ToString();
+            if (zaKlub)
+            {
+                return punoImeKorisnika + " je ocijenio klub s " + recenzija.Ocjena + ". Mišljenje: " + recenzija.Opis;
+            }
+            else
+            {
+                return punoImeKorisnika + " je ocijenio događaj: " + Dogadjaj.trenutniDogadjaj.NazivDogadjaja + " s " + recenzija.Ocjena + ". Mišljenje: " + recenzija.Opis;
+            }
+            
         }
     }
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="195f5e12ba214305af4f46922d4b7fea" Name="Diagram1">
+        <EntityTypeShape EntityType="PI20_066_DBModel.Dogadjaj" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_066_DBModel.Klub" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_066_DBModel.Korisnik" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_066_DBModel.Lokacija" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_066_DBModel.Obavijest" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_066_DBModel.Prati" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_066_DBModel.Recenzija" Width="1.5" PointX="7.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_066_DBModel.Rezervacija" Width="1.5" PointX="9.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_066_DBModel.Slika" Width="1.5" PointX="7.5" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_066_DBModel.StatusRezervacije" Width="1.5" PointX="7.5" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_066_DBModel.Stol" Width="1.5" PointX="7.5" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_066_DBModel.Zanr" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Dogadjaj_Klub" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Recenzija_Dogadjaj" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Slika_Dogadjaj" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Stol_Dogadjaj" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Klub_Admin" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Klub_Lokacija" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Klub_Zanr" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Obavijest_Klub" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Prati_Klub" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Recenzija_Klub" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Admin_Klub" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Prati_Korisnik" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Rezervacija_Korisnik" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Rezervacija_StatusRezervacije" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_066_DBModel.FK_Rezervacija_Stol" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

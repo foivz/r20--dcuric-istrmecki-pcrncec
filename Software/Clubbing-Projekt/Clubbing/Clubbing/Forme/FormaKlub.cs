@@ -14,33 +14,31 @@ namespace Clubbing.Forme
 {
     public partial class FormaKlub : Form
     {
-        public Klub odabraniKlub = null;
-        public FormaKlub(Klub odabraniKlub)
+        public FormaKlub()
         {
-            this.odabraniKlub = odabraniKlub;
             InitializeComponent();
         }
 
         private void FormaKlub_Load(object sender, EventArgs e)
         {
-            labelImeKluba.Text += odabraniKlub.ImeKluba;
-            labelMaxKapacitet.Text += odabraniKlub.MaxKapacitet;
-            panel1.BackgroundImage = null;
-            // još i učitava neku random sliku kluba (ili pak logo) na panel
+            labelImeKluba.Text += Klub.trenutniKlub.ImeKluba;
+            labelMaxKapacitet.Text += Klub.trenutniKlub.MaxKapacitet;
+            labelAdmin.Text += Klub.trenutniKlub.AdminKluba;
+            pictureBoxLogo.BackgroundImage = Klub.trenutniKlub.Logo;
+            if (Korisnik.PrijavljeniKorisnik.DohvatiKlubAdmina()!=null)
+            {
+                if(Korisnik.PrijavljeniKorisnik.DohvatiKlubAdmina().IDKlub == Klub.trenutniKlub.IDKlub)
+                {
+                    BtnOcijeni.Visible = false;
+                    BtnPrati.Visible = false;
+                }
+            }
         }
 
         private void BtnPovratak_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void BtnGalerija_Click(object sender, EventArgs e)
-        {
-            // otvara galeriju slika za odabrani klub
-            FormaGalerija formaGalerija = new FormaGalerija(true);
-            formaGalerija.Show();
-        }
-
         private void BtnOcijeni_Click(object sender, EventArgs e)
         {
             // otvara formu za dodavanje nove recenzije za taj klub
@@ -51,21 +49,36 @@ namespace Clubbing.Forme
         private void BtnPrati_Click(object sender, EventArgs e)
         {
             // ako korisnik već prati klub onda se pojavljuje poruka da već on prati taj klub
-            // admin ne može vidjeti taj button jer nam smisla
-            // kad je uspješno se u bazu postavlja da korisnik x prati klub y
+            // admin ne može vidjeti taj button jer nema smisla
+            // ako je uspješno onda se u bazu i statičku listu postavlja da korisnik x prati klub y
+            if (Korisnik.PrijavljeniKorisnik.ZapratiKlub())
+            {
+                Korisnik.PrijavljeniKorisnik.PraceniKlubovi.Add(Klub.trenutniKlub);
+            }
+            else
+            {
+                MessageBox.Show("Već pratite ovaj klub", "Greška");
+            }
         }
 
         private void BtnLokacija_Click(object sender, EventArgs e)
         {
-            // otvara formu s prikazom lokacije kluba
-            FormaLokacija formaLokacija = new FormaLokacija();
-            formaLokacija.Show();
+            // otvara formu s prikazom lokacije kluba uz pomoc google maps-a
+            if (Klub.trenutniKlub.Lokacija != null || Korisnik.PrijavljeniKorisnik.ValidacijaAutorizacijeKlub())
+            {
+                FormaLokacija formaLokacija = new FormaLokacija();
+                formaLokacija.Show();
+            }    
+            else
+            {
+                MessageBox.Show("Ovaj klub još nije unio svoju lokaciju", "Greška");
+            }
         }
 
         private void BtnOtvoriDogadjaje_Click(object sender, EventArgs e)
         {
             // otvara se forma na kojoj se nalaze svi događaji za odabran klub
-            FormaPregledSvihDogadjaja formaPregledSvihDogadjaja = new FormaPregledSvihDogadjaja();
+            FormaPregledSvihDogadjaja formaPregledSvihDogadjaja = new FormaPregledSvihDogadjaja(1);
             this.Hide();
             formaPregledSvihDogadjaja.Show();
         }

@@ -1,35 +1,69 @@
-﻿using System;
+﻿using Clubbing.Podaci;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Clubbing.Modeli
 {
-    public abstract class Lokacija
+    public class Lokacija
     {
-        // ovo je apstraktna klasa jer postoji samo jedna jedina lokacija za klub
-        // zbog toga je stavljeni statički atribut lokacija, a klasa postavljena na apstraktnu
-        // na početku lokacija nema svoje vrijednosti, pa je bitno 'dodati' lokaciju, odnosno postaviti vrijednosti u njezin statički atribut
-        // nakon toga je moguća izmjena lokacije na formi predviđenoj za tu akciju
-        private string Grad { get; set; }
-        private string Ulica { get; set; }
-        private int PostanskiBroj { get; set; }
-        public static Lokacija lokacija;
-        public Lokacija()
+        public int IDLokacija { get; set; }
+        public string Grad { get; set; }
+        public string Ulica { get; set; }
+        public int PostanskiBroj { get; set; }
+        public Lokacija(string grad, string ulica, int postanskiBroj)
         {
+            Grad = grad;
+            Ulica = ulica;
+            PostanskiBroj = postanskiBroj;
+        }
+        public string DohvatiGMUpit()
+        {
+            StringBuilder returnMe = new StringBuilder();
+            returnMe.Append("http://maps.google.com/maps?q=");
+            returnMe.Append(this.Ulica + "+");
+            returnMe.Append(this.PostanskiBroj + "+");
+            returnMe.Append(this.Grad);
+            //returnMe.Append("&output = embed");
+            return returnMe.ToString();
+        }
+        public int DodajLokacijuUBazu()
+        {
+            using(Entities entities = new Entities())
+            {
+                Podaci.Lokacija lokacija = new Podaci.Lokacija()
+                {
+                  grad = this.Grad,
+                  postanski_broj = this.PostanskiBroj,
+                  ulica = this.Ulica,
+                };
+                entities.Lokacijas.Add(lokacija);
 
+                entities.Klubs.Load();
+                var klub = (from k in entities.Klubs
+                            where k.id_klub == Klub.trenutniKlub.IDKlub
+                            select k).First();
+                klub.fk_lokacija = lokacija.id_lokacija;
+                entities.SaveChanges();
+                return lokacija.id_lokacija;
+            }
         }
-        public void PostaviLokaciju(string grad, string ulica, int postanskiBroj)
+        public void AzurirajLokacijuUBazi()
         {
-            lokacija.Grad = grad;
-            lokacija.Ulica = ulica;
-            lokacija.PostanskiBroj = postanskiBroj;
-        }
-        public void prikaziLokaciju()
-        {
-            // prikazuje lokaciju kluba na način da se u panelu prikaže karta i na njoj označi lokacija kluba
-            // njezina svrha je da korisnik na jednostavan način može vidjeti gdje se nalazi pojedini klub 
+            using (Entities entities = new Entities())
+            {
+                entities.Lokacijas.Load();
+                var lokacija = (from l in entities.Lokacijas
+                                where l.id_lokacija == this.IDLokacija
+                                select l).First();
+                lokacija.grad = this.Grad;
+                lokacija.postanski_broj = this.PostanskiBroj;
+                lokacija.ulica = this.Ulica;
+                entities.SaveChanges();
+            }
         }
     }
 }

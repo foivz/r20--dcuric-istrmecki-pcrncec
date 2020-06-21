@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -13,6 +14,8 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,11 +37,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="FontAwesome.Sharp, Version=5.12.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.12.1\lib\net45\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.pdfa.5.5.13.1\lib\itextsharp.pdfa.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -146,10 +165,10 @@
     <Compile Include="Forme\FormaGlavniMeni.Designer.cs">
       <DependentUpon>FormaGlavniMeni.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormaPrijava.cs">
+    <Compile Include="Forme\FormaPrijava.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormaPrijava.Designer.cs">
+    <Compile Include="Forme\FormaPrijava.Designer.cs">
       <DependentUpon>FormaPrijava.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\FormaHelpF1.cs">
@@ -165,7 +184,59 @@
     <Compile Include="Modeli\Obavijest.cs" />
     <Compile Include="Modeli\Recenzija.cs" />
     <Compile Include="Modeli\Rezervacija.cs" />
+    <Compile Include="Modeli\Status.cs" />
     <Compile Include="Modeli\Stol.cs" />
+    <Compile Include="Podaci\ClubbingBaza.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClubbingBaza.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Podaci\ClubbingBaza.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClubbingBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Podaci\ClubbingBaza.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClubbingBaza.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Podaci\Dogadjaj.cs">
+      <DependentUpon>ClubbingBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Podaci\Klub.cs">
+      <DependentUpon>ClubbingBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Podaci\Korisnik.cs">
+      <DependentUpon>ClubbingBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Podaci\Lokacija.cs">
+      <DependentUpon>ClubbingBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Podaci\Obavijest.cs">
+      <DependentUpon>ClubbingBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Podaci\Prati.cs">
+      <DependentUpon>ClubbingBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Podaci\Recenzija.cs">
+      <DependentUpon>ClubbingBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Podaci\Rezervacija.cs">
+      <DependentUpon>ClubbingBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Podaci\Slika.cs">
+      <DependentUpon>ClubbingBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Podaci\StatusRezervacije.cs">
+      <DependentUpon>ClubbingBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Podaci\Stol.cs">
+      <DependentUpon>ClubbingBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Podaci\Zanr.cs">
+      <DependentUpon>ClubbingBaza.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forme\FormaDodajDogadjaj.resx">
@@ -216,7 +287,7 @@
     <EmbeddedResource Include="Forme\FormaGlavniMeni.resx">
       <DependentUpon>FormaGlavniMeni.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormaPrijava.resx">
+    <EmbeddedResource Include="Forme\FormaPrijava.resx">
       <DependentUpon>FormaPrijava.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\FormaHelpF1.resx">
@@ -228,6 +299,25 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <EntityDeploy Include="Podaci\ClubbingBaza.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ClubbingBaza.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Podaci\ClubbingBaza.edmx.diagram">
+      <DependentUpon>ClubbingBaza.edmx</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\Clubbing.Podaci.Dogadjaj.datasource" />
+    <None Include="Properties\DataSources\Clubbing.Podaci.Entities.datasource" />
+    <None Include="Properties\DataSources\Clubbing.Podaci.Klub.datasource" />
+    <None Include="Properties\DataSources\Clubbing.Podaci.Korisnik.datasource" />
+    <None Include="Properties\DataSources\Clubbing.Podaci.Lokacija.datasource" />
+    <None Include="Properties\DataSources\Clubbing.Podaci.Obavijest.datasource" />
+    <None Include="Properties\DataSources\Clubbing.Podaci.Recenzija.datasource" />
+    <None Include="Properties\DataSources\Clubbing.Podaci.Rezervacija.datasource" />
+    <None Include="Properties\DataSources\Clubbing.Podaci.Slika.datasource" />
+    <None Include="Properties\DataSources\Clubbing.Podaci.StatusRezervacije.datasource" />
+    <None Include="Properties\DataSources\Clubbing.Podaci.Stol.datasource" />
+    <None Include="Properties\DataSources\Clubbing.Podaci.Zanr.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -255,5 +345,29 @@
   <ItemGroup>
     <None Include="Resources\HelpF1.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Podaci\ClubbingBaza.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ClubbingBaza.edmx</DependentUpon>
+      <LastGenOutput>ClubbingBaza.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Podaci\ClubbingBaza.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ClubbingBaza.edmx</DependentUpon>
+      <LastGenOutput>ClubbingBaza.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
 </Project>

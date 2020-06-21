@@ -14,7 +14,8 @@ namespace Clubbing.Forme
 {
     public partial class FormaSveRezervacije : Form
     {
-        private BindingList<Rezervacija> mojeRezervacije = null;
+        private List<Rezervacija> mojeRezervacije = new List<Rezervacija>();
+        private Rezervacija trenutnaRezervacija = null;
         public FormaSveRezervacije()
         {
             InitializeComponent();
@@ -22,37 +23,97 @@ namespace Clubbing.Forme
 
         private void FormaSveRezervacije_Load(object sender, EventArgs e)
         {
-            // ako koirisnik nije admin - ucitava iz baze sve rezervacije nekog korisnika
-            // ako je korisnik admin - ucitava iz baze sve zahtjeve iz baze
-            // rezervacije mogu biti na zahtjevu, potvrđene ili odijene
-            // ucitava sve rezervacije u listi mojeRezervacije u listu
+            PrikaziRezervacije();
         }
-        private void Filtriraj()
+        private void PrikaziRezervacije()
         {
-            // metoda za filtriranje rezervacija ovisno o odabranoj opciji (Npr. Odobrene)
-            // popunjava iznova listu mojeRezervacije, ali s trenutno filtriranim rezervacijama
-            // radi na isti princip kao i sve ostale filtracije u ovoj aplikaciji
+            // ako korisnik nije admin - prikazuje sve rezervacije nekog korisnika, sakriva gumbove odbij i prihvati rezervaiciju
+            // ako je korisnik admin - prikazuje sve zahtjeve za rezervacije iz baze
+            dgvRezervacije.DataSource = null;
+            mojeRezervacije.Clear();
+            if (Korisnik.PrijavljeniKorisnik.Admin)
+            {
+                Klub mojKlub = Korisnik.PrijavljeniKorisnik.DohvatiKlubAdmina();
+                foreach (Dogadjaj dogadjaj in mojKlub.Dogadjaji)
+                {
+                    foreach(Rezervacija rezervacija in dogadjaj.Rezervacije)
+                    {
+                        mojeRezervacije.Add(rezervacija);
+                    }
+                }
+                dgvRezervacije.DataSource = mojeRezervacije;
+            }
+            else
+            {
+                mojeRezervacije = Korisnik.PrijavljeniKorisnik.Rezervacije;
+                dgvRezervacije.DataSource = mojeRezervacije;
+                BtnPotvrdi.Visible = false;
+                BtnOdbij.Visible = false;
+            }
+            dgvRezervacije.Columns["IDRezervacija"].Visible = false;
         }
-
         private void BtnNovaRezervacija_Click(object sender, EventArgs e)
         {
-            // otvara formu s onim događajima koji su dostupni za rezervaiju (nadolazeći i ima još slobodnih mjesta)
-            // ovaj button admin ne vidi jer nema smisla da sam sebi rezervira mjesto na nekom događaju
-            FormaPregledSvihDogadjaja formaPregledSvihDogadjaja = new FormaPregledSvihDogadjaja();
+            // otvara formu s onim događajima koji su dostupni za rezervaiju (nadolazeći i ima još slobodnih stolova)
+            FormaPregledSvihDogadjaja formaPregledSvihDogadjaja = new FormaPregledSvihDogadjaja(2);
             formaPregledSvihDogadjaja.Show();
         }
 
         private void BtnPotvrdi_Click(object sender, EventArgs e)
         {
-            // ovaj button vidi samo admin kluba koji orgranizira događaj koji se odnosi na odabranu rezervaciju
-            // u bazu i u aplikaciju se postavlja atribut status u Potvrđeno 
+            if(trenutnaRezervacija.Status.Naziv == "Na čekanju")
+            {
+                trenutnaRezervacija.Potvrdi();
+                PrikaziRezervacije();
+            }
+            else
+            {
+                MessageBox.Show("Ne možete više mijenjati ovu rezervaciju!", "Greška");
+            }
+            
         }
 
         private void BtnOdbij_Click(object sender, EventArgs e)
         {
-            // ovaj button vidi samo admin kluba koji orgranizira događaj za koji se odnosi odabrana rezervacija
-            // u bazu i u aplikaciju se postavlja atribut status u Odbijeno 
+            if (trenutnaRezervacija.Status.Naziv == "Na čekanju")
+            {
+                trenutnaRezervacija.Odbij();
+                PrikaziRezervacije();
+            }
+            else
+            {
+                MessageBox.Show("Ne možete više mijenjati ovu rezervaciju!", "Greška");
+            }
+        }
 
+        private void btnFiltriraj_Click(object sender, EventArgs e)
+        {
+            dgvRezervacije.DataSource = null;
+            string odabir = comboBox.SelectedItem.ToString();
+            if (odabir=="Sve rezervacije")
+            {
+                dgvRezervacije.DataSource = mojeRezervacije;
+            }
+            else
+            {
+                dgvRezervacije.DataSource = mojeRezervacije.Where(x => x.Status.Naziv == odabir).ToList();
+            }
+            dgvRezervacije.Columns["IDRezervacija"].Visible = false;
+        }
+
+        private void dgvRezervacije_CurrentCellChanged(object sender, EventArgs e)
+        {
+
+            if (dgvRezervacije.CurrentRow != null) { 
+                trenutnaRezervacija = dgvRezervacije.CurrentRow.DataBoundItem as Rezervacija;
+                labelDogadjaj.Text = "Događaj: " + trenutnaRezervacija.DohvatiImeDogađaja();
+                labelKorisnik.Text = "Korisnik: " + trenutnaRezervacija.DohvatiImeKorisnika();
+            }
+            else
+            {
+                labelDogadjaj.Text = "";
+                labelKorisnik.Text = "";
+            }
         }
     }
 }

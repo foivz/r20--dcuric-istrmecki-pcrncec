@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PI20_066_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Dogadjaj">
+    <Key>
+      <PropertyRef Name="id_dogadjaj" />
+    </Key>
+    <Property Name="id_dogadjaj" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naziv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="opis" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="datum_pocetka" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="datum_zavrsetka" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="cijena_ulaznice" Type="Int32" Nullable="false" />
+    <Property Name="max_rezervacija" Type="Int32" Nullable="false" />
+    <Property Name="fk_klub" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Klub" Relationship="Self.FK_Dogadjaj_Klub" FromRole="Dogadjaj" ToRole="Klub" />
+    <NavigationProperty Name="Recenzijas" Relationship="Self.FK_Recenzija_Dogadjaj" FromRole="Dogadjaj" ToRole="Recenzija" />
+    <NavigationProperty Name="Slikas" Relationship="Self.FK_Slika_Dogadjaj" FromRole="Dogadjaj" ToRole="Slika" />
+    <NavigationProperty Name="Stols" Relationship="Self.FK_Stol_Dogadjaj" FromRole="Dogadjaj" ToRole="Stol" />
+  </EntityType>
+  <EntityType Name="Klub">
+    <Key>
+      <PropertyRef Name="id_klub" />
+    </Key>
+    <Property Name="id_klub" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naziv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="max_kapacitet" Type="Int32" Nullable="false" />
+    <Property Name="logo" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="fk_zanr" Type="Int32" Nullable="false" />
+    <Property Name="fk_lokacija" Type="Int32" />
+    <Property Name="fk_admin" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Dogadjajs" Relationship="Self.FK_Dogadjaj_Klub" FromRole="Klub" ToRole="Dogadjaj" />
+    <NavigationProperty Name="Korisnik" Relationship="Self.FK_Klub_Admin" FromRole="Klub" ToRole="Korisnik" />
+    <NavigationProperty Name="Lokacija" Relationship="Self.FK_Klub_Lokacija" FromRole="Klub" ToRole="Lokacija" />
+    <NavigationProperty Name="Zanr" Relationship="Self.FK_Klub_Zanr" FromRole="Klub" ToRole="Zanr" />
+    <NavigationProperty Name="Obavijests" Relationship="Self.FK_Obavijest_Klub" FromRole="Klub" ToRole="Obavijest" />
+    <NavigationProperty Name="Pratis" Relationship="Self.FK_Prati_Klub" FromRole="Klub" ToRole="Prati" />
+    <NavigationProperty Name="Recenzijas" Relationship="Self.FK_Recenzija_Klub" FromRole="Klub" ToRole="Recenzija" />
+  </EntityType>
+  <EntityType Name="Korisnik">
+    <Key>
+      <PropertyRef Name="id_korisnik" />
+    </Key>
+    <Property Name="id_korisnik" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prezime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="korisnicko_ime" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lozinka" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="admin" Type="Byte" Nullable="false" />
+    <NavigationProperty Name="Klubs" Relationship="Self.FK_Klub_Admin" FromRole="Korisnik" ToRole="Klub" />
+    <NavigationProperty Name="Korisnik1" Relationship="Self.FK_Admin_Klub" FromRole="Korisnik" ToRole="Korisnik1" />
+    <NavigationProperty Name="Korisnik2" Relationship="Self.FK_Admin_Klub" FromRole="Korisnik1" ToRole="Korisnik" />
+    <NavigationProperty Name="Pratis" Relationship="Self.FK_Prati_Korisnik" FromRole="Korisnik" ToRole="Prati" />
+    <NavigationProperty Name="Rezervacijas" Relationship="Self.FK_Rezervacija_Korisnik" FromRole="Korisnik" ToRole="Rezervacija" />
+  </EntityType>
+  <EntityType Name="Lokacija">
+    <Key>
+      <PropertyRef Name="id_lokacija" />
+    </Key>
+    <Property Name="id_lokacija" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="grad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ulica" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="postanski_broj" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Klubs" Relationship="Self.FK_Klub_Lokacija" FromRole="Lokacija" ToRole="Klub" />
+  </EntityType>
+  <EntityType Name="Obavijest">
+    <Key>
+      <PropertyRef Name="id_obavijest" />
+    </Key>
+    <Property Name="id_obavijest" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="opis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="datum_obavijesti" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fk_klub" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Klub" Relationship="Self.FK_Obavijest_Klub" FromRole="Obavijest" ToRole="Klub" />
+  </EntityType>
+  <EntityType Name="Prati">
+    <Key>
+      <PropertyRef Name="fk_klub" />
+      <PropertyRef Name="fk_korisnik" />
+    </Key>
+    <Property Name="fk_klub" Type="Int32" Nullable="false" />
+    <Property Name="fk_korisnik" Type="Int32" Nullable="false" />
+    <Property Name="datum" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Klub" Relationship="Self.FK_Prati_Klub" FromRole="Prati" ToRole="Klub" />
+    <NavigationProperty Name="Korisnik" Relationship="Self.FK_Prati_Korisnik" FromRole="Prati" ToRole="Korisnik" />
+  </EntityType>
+  <EntityType Name="Recenzija">
+    <Key>
+      <PropertyRef Name="id_recenzija" />
+    </Key>
+    <Property Name="id_recenzija" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ocjena" Type="Int32" Nullable="false" />
+    <Property Name="opis" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fk_dogadjaj" Type="Int32" />
+    <Property Name="fk_klub" Type="Int32" />
+    <NavigationProperty Name="Dogadjaj" Relationship="Self.FK_Recenzija_Dogadjaj" FromRole="Recenzija" ToRole="Dogadjaj" />
+    <NavigationProperty Name="Klub" Relationship="Self.FK_Recenzija_Klub" FromRole="Recenzija" ToRole="Klub" />
+  </EntityType>
+  <EntityType Name="Rezervacija">
+    <Key>
+      <PropertyRef Name="id_rezervacija" />
+    </Key>
+    <Property Name="id_rezervacija" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="broj_ljudi" Type="Int32" Nullable="false" />
+    <Property Name="datum_rezervacije" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fk_korisnik" Type="Int32" Nullable="false" />
+    <Property Name="fk_stol" Type="Int32" Nullable="false" />
+    <Property Name="fk_status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Korisnik" Relationship="Self.FK_Rezervacija_Korisnik" FromRole="Rezervacija" ToRole="Korisnik" />
+    <NavigationProperty Name="StatusRezervacije" Relationship="Self.FK_Rezervacija_StatusRezervacije" FromRole="Rezervacija" ToRole="StatusRezervacije" />
+    <NavigationProperty Name="Stol" Relationship="Self.FK_Rezervacija_Stol" FromRole="Rezervacija" ToRole="Stol" />
+  </EntityType>
+  <EntityType Name="Slika">
+    <Key>
+      <PropertyRef Name="id_slika" />
+    </Key>
+    <Property Name="id_slika" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="slika1" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="fk_dogadjaj" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Dogadjaj" Relationship="Self.FK_Slika_Dogadjaj" FromRole="Slika" ToRole="Dogadjaj" />
+  </EntityType>
+  <EntityType Name="StatusRezervacije">
+    <Key>
+      <PropertyRef Name="id_status" />
+    </Key>
+    <Property Name="id_status" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naziv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Rezervacijas" Relationship="Self.FK_Rezervacija_StatusRezervacije" FromRole="StatusRezervacije" ToRole="Rezervacija" />
+  </EntityType>
+  <EntityType Name="Stol">
+    <Key>
+      <PropertyRef Name="id_stol" />
+    </Key>
+    <Property Name="id_stol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naziv_lokacije" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="max_mjesta" Type="Int32" Nullable="false" />
+    <Property Name="fk_dogadjaj" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Dogadjaj" Relationship="Self.FK_Stol_Dogadjaj" FromRole="Stol" ToRole="Dogadjaj" />
+    <NavigationProperty Name="Rezervacijas" Relationship="Self.FK_Rezervacija_Stol" FromRole="Stol" ToRole="Rezervacija" />
+  </EntityType>
+  <EntityType Name="Zanr">
+    <Key>
+      <PropertyRef Name="id_zanr" />
+    </Key>
+    <Property Name="id_zanr" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naziv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Klubs" Relationship="Self.FK_Klub_Zanr" FromRole="Zanr" ToRole="Klub" />
+  </EntityType>
+  <Association Name="FK_Dogadjaj_Klub">
+    <End Role="Klub" Type="Self.Klub" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Dogadjaj" Type="Self.Dogadjaj" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Klub">
+        <PropertyRef Name="id_klub" />
+      </Principal>
+      <Dependent Role="Dogadjaj">
+        <PropertyRef Name="fk_klub" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Recenzija_Dogadjaj">
+    <End Role="Dogadjaj" Type="Self.Dogadjaj" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Recenzija" Type="Self.Recenzija" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dogadjaj">
+        <PropertyRef Name="id_dogadjaj" />
+      </Principal>
+      <Dependent Role="Recenzija">
+        <PropertyRef Name="fk_dogadjaj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Slika_Dogadjaj">
+    <End Role="Dogadjaj" Type="Self.Dogadjaj" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Slika" Type="Self.Slika" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dogadjaj">
+        <PropertyRef Name="id_dogadjaj" />
+      </Principal>
+      <Dependent Role="Slika">
+        <PropertyRef Name="fk_dogadjaj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stol_Dogadjaj">
+    <End Role="Dogadjaj" Type="Self.Dogadjaj" Multiplicity="1" />
+    <End Role="Stol" Type="Self.Stol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dogadjaj">
+        <PropertyRef Name="id_dogadjaj" />
+      </Principal>
+      <Dependent Role="Stol">
+        <PropertyRef Name="fk_dogadjaj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Klub_Admin">
+    <End Role="Korisnik" Type="Self.Korisnik" Multiplicity="1" />
+    <End Role="Klub" Type="Self.Klub" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Korisnik">
+        <PropertyRef Name="id_korisnik" />
+      </Principal>
+      <Dependent Role="Klub">
+        <PropertyRef Name="fk_admin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Klub_Lokacija">
+    <End Role="Lokacija" Type="Self.Lokacija" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Klub" Type="Self.Klub" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lokacija">
+        <PropertyRef Name="id_lokacija" />
+      </Principal>
+      <Dependent Role="Klub">
+        <PropertyRef Name="fk_lokacija" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Klub_Zanr">
+    <End Role="Zanr" Type="Self.Zanr" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Klub" Type="Self.Klub" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zanr">
+        <PropertyRef Name="id_zanr" />
+      </Principal>
+      <Dependent Role="Klub">
+        <PropertyRef Name="fk_zanr" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Obavijest_Klub">
+    <End Role="Klub" Type="Self.Klub" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Obavijest" Type="Self.Obavijest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Klub">
+        <PropertyRef Name="id_klub" />
+      </Principal>
+      <Dependent Role="Obavijest">
+        <PropertyRef Name="fk_klub" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Prati_Klub">
+    <End Role="Klub" Type="Self.Klub" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Prati" Type="Self.Prati" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Klub">
+        <PropertyRef Name="id_klub" />
+      </Principal>
+      <Dependent Role="Prati">
+        <PropertyRef Name="fk_klub" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Recenzija_Klub">
+    <End Role="Klub" Type="Self.Klub" Multiplicity="0..1" />
+    <End Role="Recenzija" Type="Self.Recenzija" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Klub">
+        <PropertyRef Name="id_klub" />
+      </Principal>
+      <Dependent Role="Recenzija">
+        <PropertyRef Name="fk_klub" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Admin_Klub">
+    <End Role="Korisnik" Type="Self.Korisnik" Multiplicity="1" />
+    <End Role="Korisnik1" Type="Self.Korisnik" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Korisnik">
+        <PropertyRef Name="id_korisnik" />
+      </Principal>
+      <Dependent Role="Korisnik1">
+        <PropertyRef Name="id_korisnik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Prati_Korisnik">
+    <End Role="Korisnik" Type="Self.Korisnik" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Prati" Type="Self.Prati" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Korisnik">
+        <PropertyRef Name="id_korisnik" />
+      </Principal>
+      <Dependent Role="Prati">
+        <PropertyRef Name="fk_korisnik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rezervacija_Korisnik">
+    <End Role="Korisnik" Type="Self.Korisnik" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Rezervacija" Type="Self.Rezervacija" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Korisnik">
+        <PropertyRef Name="id_korisnik" />
+      </Principal>
+      <Dependent Role="Rezervacija">
+        <PropertyRef Name="fk_korisnik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rezervacija_StatusRezervacije">
+    <End Role="StatusRezervacije" Type="Self.StatusRezervacije" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Rezervacija" Type="Self.Rezervacija" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusRezervacije">
+        <PropertyRef Name="id_status" />
+      </Principal>
+      <Dependent Role="Rezervacija">
+        <PropertyRef Name="fk_status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rezervacija_Stol">
+    <End Role="Stol" Type="Self.Stol" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Rezervacija" Type="Self.Rezervacija" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stol">
+        <PropertyRef Name="id_stol" />
+      </Principal>
+      <Dependent Role="Rezervacija">
+        <PropertyRef Name="fk_stol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Dogadjajs" EntityType="Self.Dogadjaj" />
+    <EntitySet Name="Klubs" EntityType="Self.Klub" />
+    <EntitySet Name="Korisniks" EntityType="Self.Korisnik" />
+    <EntitySet Name="Lokacijas" EntityType="Self.Lokacija" />
+    <EntitySet Name="Obavijests" EntityType="Self.Obavijest" />
+    <EntitySet Name="Pratis" EntityType="Self.Prati" />
+    <EntitySet Name="Recenzijas" EntityType="Self.Recenzija" />
+    <EntitySet Name="Rezervacijas" EntityType="Self.Rezervacija" />
+    <EntitySet Name="Slikas" EntityType="Self.Slika" />
+    <EntitySet Name="StatusRezervacijes" EntityType="Self.StatusRezervacije" />
+    <EntitySet Name="Stols" EntityType="Self.Stol" />
+    <EntitySet Name="Zanrs" EntityType="Self.Zanr" />
+    <AssociationSet Name="FK_Dogadjaj_Klub" Association="Self.FK_Dogadjaj_Klub">
+      <End Role="Klub" EntitySet="Klubs" />
+      <End Role="Dogadjaj" EntitySet="Dogadjajs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Recenzija_Dogadjaj" Association="Self.FK_Recenzija_Dogadjaj">
+      <End Role="Dogadjaj" EntitySet="Dogadjajs" />
+      <End Role="Recenzija" EntitySet="Recenzijas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Slika_Dogadjaj" Association="Self.FK_Slika_Dogadjaj">
+      <End Role="Dogadjaj" EntitySet="Dogadjajs" />
+      <End Role="Slika" EntitySet="Slikas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stol_Dogadjaj" Association="Self.FK_Stol_Dogadjaj">
+      <End Role="Dogadjaj" EntitySet="Dogadjajs" />
+      <End Role="Stol" EntitySet="Stols" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Klub_Admin" Association="Self.FK_Klub_Admin">
+      <End Role="Korisnik" EntitySet="Korisniks" />
+      <End Role="Klub" EntitySet="Klubs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Klub_Lokacija" Association="Self.FK_Klub_Lokacija">
+      <End Role="Lokacija" EntitySet="Lokacijas" />
+      <End Role="Klub" EntitySet="Klubs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Klub_Zanr" Association="Self.FK_Klub_Zanr">
+      <End Role="Zanr" EntitySet="Zanrs" />
+      <End Role="Klub" EntitySet="Klubs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Obavijest_Klub" Association="Self.FK_Obavijest_Klub">
+      <End Role="Klub" EntitySet="Klubs" />
+      <End Role="Obavijest" EntitySet="Obavijests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Prati_Klub" Association="Self.FK_Prati_Klub">
+      <End Role="Klub" EntitySet="Klubs" />
+      <End Role="Prati" EntitySet="Pratis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Recenzija_Klub" Association="Self.FK_Recenzija_Klub">
+      <End Role="Klub" EntitySet="Klubs" />
+      <End Role="Recenzija" EntitySet="Recenzijas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Admin_Klub" Association="Self.FK_Admin_Klub">
+      <End Role="Korisnik" EntitySet="Korisniks" />
+      <End Role="Korisnik1" EntitySet="Korisniks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Prati_Korisnik" Association="Self.FK_Prati_Korisnik">
+      <End Role="Korisnik" EntitySet="Korisniks" />
+      <End Role="Prati" EntitySet="Pratis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rezervacija_Korisnik" Association="Self.FK_Rezervacija_Korisnik">
+      <End Role="Korisnik" EntitySet="Korisniks" />
+      <End Role="Rezervacija" EntitySet="Rezervacijas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rezervacija_StatusRezervacije" Association="Self.FK_Rezervacija_StatusRezervacije">
+      <End Role="StatusRezervacije" EntitySet="StatusRezervacijes" />
+      <End Role="Rezervacija" EntitySet="Rezervacijas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rezervacija_Stol" Association="Self.FK_Rezervacija_Stol">
+      <End Role="Stol" EntitySet="Stols" />
+      <End Role="Rezervacija" EntitySet="Rezervacijas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

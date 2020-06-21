@@ -13,8 +13,6 @@ namespace Clubbing.Forme
 {
     public partial class FormaDodajRezervaciju : Form
     {
-        private int inputBrojLjudi;
-        private Stol inputStol = null;
         public FormaDodajRezervaciju()
         {
             InitializeComponent();
@@ -25,8 +23,26 @@ namespace Clubbing.Forme
             // pokusava dodati novu rezervaciju
             try
             {
-                inputBrojLjudi = Convert.ToInt32(textBoxBrojLjudi.Text);
-                // inputStol = (Stol)listViewStolovi.SelectedItems[0];
+                int inputBrojLjudi = Convert.ToInt32(textBoxBrojLjudi.Text);
+                Stol inputStol = comboBoxStolovi.SelectedItem as Stol;
+                if (ValidacijaRezervacije(inputStol, inputBrojLjudi))
+                {
+                    Rezervacija rezervacija = new Rezervacija(inputBrojLjudi, inputStol,  DateTime.Now, 0);
+                    int id = rezervacija.DodajRezervacijuUBazu();
+                    rezervacija.IDRezervacija = id;
+                    Dogadjaj.trenutniDogadjaj.Rezervacije.Add(rezervacija);
+                    Korisnik.PrijavljeniKorisnik.Rezervacije.Add(rezervacija);
+                    MessageBox.Show("Uspješno ste rezervirali odabrani događaj!");
+
+                    string opisObavijest = "Korisnik " + Korisnik.PrijavljeniKorisnik.ToString() + " je rezervirao događaj " + Dogadjaj.trenutniDogadjaj.NazivDogadjaja;
+                    Obavijest obavijest = new Obavijest(opisObavijest, DateTime.Now);
+                    obavijest.DodajObavijestUBazu(false);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Unijeli ste prevelik broj ljudi za taj stol", "Greška");
+                }
             }
             catch
             {
@@ -41,13 +57,17 @@ namespace Clubbing.Forme
 
         private void FormaDodajRezervaciju_Load(object sender, EventArgs e)
         {
-            // ovdje se popunjava Listview iz baze uz određene uvijete
-            // primjer uvijeta je da se odaberu samo oni stolovi koji nisu već rezervirani za odabrani događaj
-            // osim toga mora ze zadovoljiti metoda ValidacijaRezervaijce()
+            // ovdje se popunjava combobox iz baze uz uvijet
+            // uvijet je da se odaberu samo oni stolovi koji nisu već rezervirani za odabrani događaj
+            List<Stol> slobodniStolovi = Dogadjaj.trenutniDogadjaj.DohvatiSlobodneStolove();
+            comboBoxStolovi.DataSource = slobodniStolovi;
+            comboBoxStolovi.DisplayMember = slobodniStolovi.ToString();
         }
-        private bool ValidacijaRezervacije()
+        private bool ValidacijaRezervacije(Stol odabraniStol, int brojLjudi)
         {
-            return false;
+            // provjerava se da li nije unesen prevelik broj ljudi za odabrani stol
+            return odabraniStol.MaxMjesta >= brojLjudi;
+            
         }
     }
 }

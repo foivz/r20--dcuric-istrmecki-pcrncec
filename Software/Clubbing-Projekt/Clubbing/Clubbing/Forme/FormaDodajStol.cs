@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Clubbing.Modeli;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,7 +26,18 @@ namespace Clubbing.Forme
             {
                 inputMaxMjesta = Convert.ToInt32(textBoxMaxMjesta.Text);
                 inputNazivLokacije = textBoxNazivLokacije.Text;
-                this.Close();
+                if (ValidacijaStola(inputMaxMjesta))
+                {
+                    Stol stol = new Stol(inputNazivLokacije, inputMaxMjesta);
+                    int idStol = stol.DodajStolUBazu();
+                    stol.IDStol = idStol;
+                    Dogadjaj.trenutniDogadjaj.Stolovi.Add(stol);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Odabrali ste prevelik broj maksmialnih mjesta za stolom!", "Greška");
+                }     
             }
             catch
             {
@@ -37,10 +49,14 @@ namespace Clubbing.Forme
         {
             this.Close();
         }
-
-        private void FormaDodajStol_Load(object sender, EventArgs e)
+        private bool ValidacijaStola(int maxMjesta)
         {
-
+            // metoda koja se koristi neposredno prije dodavanja novog stola (novog objekta klase) kako bi se eventualno zabranilo dodavanje novog stola
+            // jedan stol = jedna rezervacija
+            // usporedba max rezervacija događaja i njegovih svih dosadasnjih kapacteta stolova + kapacitet novog stola
+            int suma = Dogadjaj.trenutniDogadjaj.Stolovi.Sum(x => x.MaxMjesta) + maxMjesta;
+            if (Dogadjaj.trenutniDogadjaj.MaxRezervacija < suma) return false;
+            else return true;
         }
     }
 }

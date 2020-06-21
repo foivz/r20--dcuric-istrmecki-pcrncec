@@ -13,29 +13,64 @@ namespace Clubbing.Forme
 {
     public partial class FormaObavijesti : Form
     {
-        private BindingList<Obavijest> sveObavijesti = null;
+        List<Obavijest> mojeObavijesti = null;
         public FormaObavijesti()
         {
             InitializeComponent();
+            if (!Korisnik.PrijavljeniKorisnik.Admin)
+            {
+                BtnDodajObavijest.Visible = false;
+                labelNOP.Visible = false;
+                textBoxObavijest.ReadOnly = true;
+                PrikaziObavijesti(false);
+            }
+            else
+            {
+                PrikaziObavijesti(true);
+            }
         }
-
-        private void FormaObavijesti_Load(object sender, EventArgs e)
+        private void PrikaziObavijesti(bool admin)
         {
-            // iz baze se uzimaju sve obavijesti nekog korisnika i one se popunjavaju u dgv uz pomoc metode PrikaziObavijesti()
-        }
-        private void PrikaziObavijesti()
-        {
-            // ova metoda popunjava varijablu sveObavijesti s obzirom na dohvaćane podatke iz baze
-        }
-        private void Filtriraj()
-        {
-            // filtrira (mijenja) atribut sveObavijesti s obzirom na odabrane opcije
+            // u dgv se prikazuju obavijesti korisnika (klijenta) ili admina
+            // adminove obavijesti su recenzije i rezervacije korisnika za njegov klub
+            // korisničke obavijesti su obavijesti svih klubova koje taj korisnik prati (obavijest za novi događaj, ručno napisane obavijesti)
+            if (admin)
+            {
+                mojeObavijesti = Obavijest.DohvatiObavijestiAdmina(Korisnik.PrijavljeniKorisnik);
+            }
+            else
+            {
+                mojeObavijesti = Obavijest.DohvatiObavijestiKorisnika(Korisnik.PrijavljeniKorisnik);
+            }
+            dgvObavijesti.DataSource = mojeObavijesti;
+            if (dgvObavijesti.DataSource != null)
+            {
+                dgvObavijesti.Columns["IDObavijest"].Visible = false;
+            }
         }
         private void BtnDodajObavijest_Click(object sender, EventArgs e)
         {
             // ovaj button vidi samo admin kluba, pošto samo on može slati obavijesti korisnicima
-            // obavijest se cita iz textboxa lijevo
-            // pritiskom na button se dodaje obavijest u bazu za sve korisnike koji prate adminov klub (onaj admin koji je posalo obavijest)
+            // pritiskom na button se dodaje obavijest u bazu za adminov klub
+            Obavijest obavijest = new Obavijest(textBoxObavijest.Text, DateTime.Now);
+            obavijest.DodajObavijestUBazu(true);
+            textBoxObavijest.Text = "";
+        }
+
+        private void dgvObavijesti_CurrentCellChanged(object sender, EventArgs e)
+        {
+            if(dgvObavijesti.CurrentRow != null)
+            {
+                try
+                {
+                    Obavijest trenutnaObavijest = dgvObavijesti.CurrentRow.DataBoundItem as Obavijest;
+                    textBoxObavijest.Text = trenutnaObavijest.Opis;
+                }
+                catch(Exception exception)
+                {
+                    MessageBox.Show(exception.Message);
+                }
+            }            
         }
     }
 }
