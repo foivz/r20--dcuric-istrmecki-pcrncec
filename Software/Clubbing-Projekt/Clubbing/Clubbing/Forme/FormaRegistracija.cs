@@ -39,6 +39,7 @@ namespace Clubbing.Forme
                     entities.Korisniks.Add(korisnik);
                     entities.SaveChanges();
                 }
+                MessageBox.Show("Uspješno ste se registrirali");
                 this.Hide();
                 FormaPrijava formaPrijava = new FormaPrijava();
                 formaPrijava.Show();

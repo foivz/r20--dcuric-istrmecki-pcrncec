@@ -68,7 +68,7 @@
             this.Controls.Add(this.TextBoxHelpF1);
             this.Name = "FormaHelpF1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormHelpF1";
+            this.Text = "Help";
             this.Load += new System.EventHandler(this.FormHelpF1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -180,7 +180,6 @@
     <Compile Include="Modeli\Dogadjaj.cs" />
     <Compile Include="Modeli\Klub.cs" />
     <Compile Include="Modeli\Korisnik.cs" />
-    <Compile Include="Modeli\Lokacija.cs" />
     <Compile Include="Modeli\Obavijest.cs" />
     <Compile Include="Modeli\Recenzija.cs" />
     <Compile Include="Modeli\Rezervacija.cs" />
@@ -348,7 +347,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Podaci\ClubbingBaza.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -360,6 +358,12 @@
       <DependentUpon>ClubbingBaza.edmx</DependentUpon>
       <LastGenOutput>ClubbingBaza.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClubbingClassLibrary\ClubbingClassLibrary.csproj">
+      <Project>{617b1ea6-4dc3-471b-b50c-96b733cab308}</Project>
+      <Name>ClubbingClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

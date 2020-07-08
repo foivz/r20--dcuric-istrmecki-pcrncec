@@ -134,7 +134,7 @@
             this.MinimumSize = new System.Drawing.Size(474, 557);
             this.Name = "FormaPrijava";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Prijava/Registracija";
+            this.Text = "Prijava";
             this.ResumeLayout(false);
             this.PerformLayout();
 

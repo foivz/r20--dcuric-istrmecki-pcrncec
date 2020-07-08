@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Clubbing.Forme;
 using Clubbing.Modeli;
+using ClubbingClassLibrary;
 
 namespace Clubbing.Forme
 {
@@ -55,13 +56,19 @@ namespace Clubbing.Forme
             dgvDogadjaji.DataSource = null;
             dgvDogadjaji.DataSource = dogadjaji;
             dgvDogadjaji.Columns["IDDogadjaj"].Visible = false;
+            dgvDogadjaji.Columns[1].HeaderText = "Naziv događaja";
+            dgvDogadjaji.Columns[2].HeaderText = "Opis";
+            dgvDogadjaji.Columns[3].HeaderText = "Datum početka";
+            dgvDogadjaji.Columns[4].HeaderText = "Datum završetka";
+            dgvDogadjaji.Columns[5].HeaderText = "Cijena ulaznice";
+            dgvDogadjaji.Columns[6].HeaderText = "Maksimalno rezervacija";
         }
 
         private void BtnRezerviraj_Click(object sender, EventArgs e)
         {
             // pritiskom na ovaj gumb se otvara forma FormaDodajRezervaciju na kojoj se dodaje rezervacija za odabrani događaj
             // ta akcija se sprječava ako je korisnik već rezervirao odabrani događaj ili ako se odabere završen događaj
-            if (Dogadjaj.trenutniDogadjaj.Nadolazeci())
+            if (DogadjajLib.Nadolazeci(Dogadjaj.trenutniDogadjaj.DatumPocetka))
             {
                 var mojeRezervacije = Korisnik.PrijavljeniKorisnik.Rezervacije.Select(x => x.IDRezervacija);
                 bool vecRezervirano = Dogadjaj.trenutniDogadjaj.Rezervacije.Select(id => id.IDRezervacija).Intersect(mojeRezervacije).Any();
@@ -119,11 +126,11 @@ namespace Clubbing.Forme
             }
             else if (radioBtnZavrseni.Checked)
             {
-                dgvDogadjaji.DataSource = dogadjaji.Where(x => x.Zavrseni()).ToList();
+                dgvDogadjaji.DataSource = dogadjaji.Where(x => DogadjajLib.Zavrseni(x.DatumZavrsetka)).ToList();
             }
             else if (radioBtnNadolazeci.Checked)
             {
-                dgvDogadjaji.DataSource = dogadjaji.Where(x => x.Nadolazeci()).ToList();
+                dgvDogadjaji.DataSource = dogadjaji.Where(x => DogadjajLib.Nadolazeci(x.DatumPocetka)).ToList();
             }
         }
         private Dogadjaj DohvatiOdabraniDogadjaj()

@@ -38,10 +38,10 @@
             // 
             // BtnOdustani
             // 
-            this.BtnOdustani.Location = new System.Drawing.Point(212, 136);
-            this.BtnOdustani.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnOdustani.Location = new System.Drawing.Point(283, 167);
+            this.BtnOdustani.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnOdustani.Name = "BtnOdustani";
-            this.BtnOdustani.Size = new System.Drawing.Size(91, 32);
+            this.BtnOdustani.Size = new System.Drawing.Size(121, 39);
             this.BtnOdustani.TabIndex = 12;
             this.BtnOdustani.Text = "Odustani";
             this.BtnOdustani.UseVisualStyleBackColor = true;
@@ -49,10 +49,10 @@
             // 
             // BtnDodajRecenziju
             // 
-            this.BtnDodajRecenziju.Location = new System.Drawing.Point(212, 64);
-            this.BtnDodajRecenziju.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnDodajRecenziju.Location = new System.Drawing.Point(283, 79);
+            this.BtnDodajRecenziju.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnDodajRecenziju.Name = "BtnDodajRecenziju";
-            this.BtnDodajRecenziju.Size = new System.Drawing.Size(91, 32);
+            this.BtnDodajRecenziju.Size = new System.Drawing.Size(121, 39);
             this.BtnDodajRecenziju.TabIndex = 11;
             this.BtnDodajRecenziju.Text = "Dodaj recenziju";
             this.BtnDodajRecenziju.UseVisualStyleBackColor = true;
@@ -63,8 +63,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(91, 122);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(121, 150);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 17);
             this.label2.TabIndex = 10;
@@ -75,8 +74,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(82, 34);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(109, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 17);
             this.label1.TabIndex = 9;
@@ -84,37 +82,37 @@
             // 
             // textBoxOpis
             // 
-            this.textBoxOpis.Location = new System.Drawing.Point(50, 151);
-            this.textBoxOpis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxOpis.Location = new System.Drawing.Point(67, 186);
+            this.textBoxOpis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxOpis.Multiline = true;
             this.textBoxOpis.Name = "textBoxOpis";
-            this.textBoxOpis.Size = new System.Drawing.Size(123, 19);
+            this.textBoxOpis.Size = new System.Drawing.Size(163, 22);
             this.textBoxOpis.TabIndex = 8;
             // 
             // textBoxOcjena
             // 
-            this.textBoxOcjena.Location = new System.Drawing.Point(50, 64);
-            this.textBoxOcjena.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxOcjena.Location = new System.Drawing.Point(67, 79);
+            this.textBoxOcjena.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxOcjena.Name = "textBoxOcjena";
-            this.textBoxOcjena.Size = new System.Drawing.Size(123, 20);
+            this.textBoxOcjena.Size = new System.Drawing.Size(163, 22);
             this.textBoxOcjena.TabIndex = 7;
             // 
             // FormaDodajRecenziju
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(343, 224);
+            this.ClientSize = new System.Drawing.Size(457, 276);
             this.Controls.Add(this.BtnOdustani);
             this.Controls.Add(this.BtnDodajRecenziju);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxOpis);
             this.Controls.Add(this.textBoxOcjena);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormaDodajRecenziju";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormaDodajRecenziju";
+            this.Text = "Dodaj recenziju";
             this.ResumeLayout(false);
             this.PerformLayout();
 

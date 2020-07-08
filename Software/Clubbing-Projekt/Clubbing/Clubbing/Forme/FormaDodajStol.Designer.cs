@@ -39,10 +39,10 @@
             // BtnOdustani
             // 
             this.BtnOdustani.ForeColor = System.Drawing.Color.Black;
-            this.BtnOdustani.Location = new System.Drawing.Point(206, 154);
-            this.BtnOdustani.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnOdustani.Location = new System.Drawing.Point(275, 190);
+            this.BtnOdustani.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnOdustani.Name = "BtnOdustani";
-            this.BtnOdustani.Size = new System.Drawing.Size(91, 32);
+            this.BtnOdustani.Size = new System.Drawing.Size(121, 39);
             this.BtnOdustani.TabIndex = 18;
             this.BtnOdustani.Text = "Odustani";
             this.BtnOdustani.UseVisualStyleBackColor = true;
@@ -51,10 +51,10 @@
             // BtnDodajStol
             // 
             this.BtnDodajStol.ForeColor = System.Drawing.Color.Black;
-            this.BtnDodajStol.Location = new System.Drawing.Point(206, 67);
-            this.BtnDodajStol.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnDodajStol.Location = new System.Drawing.Point(275, 82);
+            this.BtnDodajStol.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnDodajStol.Name = "BtnDodajStol";
-            this.BtnDodajStol.Size = new System.Drawing.Size(91, 32);
+            this.BtnDodajStol.Size = new System.Drawing.Size(121, 39);
             this.BtnDodajStol.TabIndex = 17;
             this.BtnDodajStol.Text = "Dodaj stol";
             this.BtnDodajStol.UseVisualStyleBackColor = true;
@@ -65,8 +65,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(38, 132);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(51, 162);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 17);
             this.label2.TabIndex = 16;
@@ -77,8 +76,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(33, 45);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(44, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(148, 17);
             this.label1.TabIndex = 15;
@@ -86,27 +84,27 @@
             // 
             // textBoxMaxMjesta
             // 
-            this.textBoxMaxMjesta.Location = new System.Drawing.Point(44, 161);
-            this.textBoxMaxMjesta.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxMaxMjesta.Location = new System.Drawing.Point(59, 198);
+            this.textBoxMaxMjesta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxMaxMjesta.Multiline = true;
             this.textBoxMaxMjesta.Name = "textBoxMaxMjesta";
-            this.textBoxMaxMjesta.Size = new System.Drawing.Size(123, 19);
+            this.textBoxMaxMjesta.Size = new System.Drawing.Size(163, 22);
             this.textBoxMaxMjesta.TabIndex = 14;
             // 
             // textBoxNazivLokacije
             // 
-            this.textBoxNazivLokacije.Location = new System.Drawing.Point(44, 74);
-            this.textBoxNazivLokacije.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxNazivLokacije.Location = new System.Drawing.Point(59, 91);
+            this.textBoxNazivLokacije.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxNazivLokacije.Name = "textBoxNazivLokacije";
-            this.textBoxNazivLokacije.Size = new System.Drawing.Size(123, 20);
+            this.textBoxNazivLokacije.Size = new System.Drawing.Size(163, 22);
             this.textBoxNazivLokacije.TabIndex = 13;
             // 
             // FormaDodajStol
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(341, 224);
+            this.ClientSize = new System.Drawing.Size(455, 276);
             this.Controls.Add(this.BtnOdustani);
             this.Controls.Add(this.BtnDodajStol);
             this.Controls.Add(this.label2);
@@ -114,10 +112,10 @@
             this.Controls.Add(this.textBoxMaxMjesta);
             this.Controls.Add(this.textBoxNazivLokacije);
             this.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormaDodajStol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormaDodajStol";
+            this.Text = "Dodaj stol";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -46,10 +46,10 @@
             // 
             // BtnOdustani
             // 
-            this.BtnOdustani.Location = new System.Drawing.Point(320, 265);
-            this.BtnOdustani.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnOdustani.Location = new System.Drawing.Point(427, 326);
+            this.BtnOdustani.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnOdustani.Name = "BtnOdustani";
-            this.BtnOdustani.Size = new System.Drawing.Size(91, 32);
+            this.BtnOdustani.Size = new System.Drawing.Size(121, 39);
             this.BtnOdustani.TabIndex = 24;
             this.BtnOdustani.Text = "Odustani";
             this.BtnOdustani.UseVisualStyleBackColor = true;
@@ -57,10 +57,10 @@
             // 
             // BtnDodajDogadjaj
             // 
-            this.BtnDodajDogadjaj.Location = new System.Drawing.Point(183, 265);
-            this.BtnDodajDogadjaj.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnDodajDogadjaj.Location = new System.Drawing.Point(244, 326);
+            this.BtnDodajDogadjaj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnDodajDogadjaj.Name = "BtnDodajDogadjaj";
-            this.BtnDodajDogadjaj.Size = new System.Drawing.Size(91, 32);
+            this.BtnDodajDogadjaj.Size = new System.Drawing.Size(121, 39);
             this.BtnDodajDogadjaj.TabIndex = 23;
             this.BtnDodajDogadjaj.Text = "Dodaj događaj";
             this.BtnDodajDogadjaj.UseVisualStyleBackColor = true;
@@ -71,8 +71,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(106, 93);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(141, 114);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 17);
             this.label2.TabIndex = 22;
@@ -83,8 +82,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(106, 28);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(141, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 17);
             this.label1.TabIndex = 21;
@@ -92,19 +90,19 @@
             // 
             // textBoxOpis
             // 
-            this.textBoxOpis.Location = new System.Drawing.Point(40, 122);
-            this.textBoxOpis.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxOpis.Location = new System.Drawing.Point(53, 150);
+            this.textBoxOpis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxOpis.Multiline = true;
             this.textBoxOpis.Name = "textBoxOpis";
-            this.textBoxOpis.Size = new System.Drawing.Size(234, 19);
+            this.textBoxOpis.Size = new System.Drawing.Size(311, 22);
             this.textBoxOpis.TabIndex = 20;
             // 
             // textBoxNaziv
             // 
-            this.textBoxNaziv.Location = new System.Drawing.Point(40, 54);
-            this.textBoxNaziv.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxNaziv.Location = new System.Drawing.Point(53, 66);
+            this.textBoxNaziv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxNaziv.Name = "textBoxNaziv";
-            this.textBoxNaziv.Size = new System.Drawing.Size(234, 20);
+            this.textBoxNaziv.Size = new System.Drawing.Size(311, 22);
             this.textBoxNaziv.TabIndex = 19;
             // 
             // label3
@@ -112,8 +110,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(37, 162);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(49, 199);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(254, 17);
             this.label3.TabIndex = 26;
@@ -124,8 +121,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(317, 162);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(423, 199);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(267, 17);
             this.label4.TabIndex = 28;
@@ -136,8 +132,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(386, 28);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(515, 34);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(118, 17);
             this.label5.TabIndex = 30;
@@ -145,10 +140,10 @@
             // 
             // textBoxCijena
             // 
-            this.textBoxCijena.Location = new System.Drawing.Point(320, 54);
-            this.textBoxCijena.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCijena.Location = new System.Drawing.Point(427, 66);
+            this.textBoxCijena.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCijena.Name = "textBoxCijena";
-            this.textBoxCijena.Size = new System.Drawing.Size(234, 20);
+            this.textBoxCijena.Size = new System.Drawing.Size(311, 22);
             this.textBoxCijena.TabIndex = 29;
             // 
             // label6
@@ -156,8 +151,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(317, 93);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(423, 114);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(242, 17);
             this.label6.TabIndex = 32;
@@ -165,36 +159,38 @@
             // 
             // textBoxMaxRez
             // 
-            this.textBoxMaxRez.Location = new System.Drawing.Point(320, 122);
-            this.textBoxMaxRez.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxMaxRez.Location = new System.Drawing.Point(427, 150);
+            this.textBoxMaxRez.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxMaxRez.Name = "textBoxMaxRez";
-            this.textBoxMaxRez.Size = new System.Drawing.Size(234, 20);
+            this.textBoxMaxRez.Size = new System.Drawing.Size(311, 22);
             this.textBoxMaxRez.TabIndex = 31;
             // 
             // dateTimePocetak
             // 
             this.dateTimePocetak.CustomFormat = "dd/MM/yyyy hh:mm tt";
             this.dateTimePocetak.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePocetak.Location = new System.Drawing.Point(40, 203);
+            this.dateTimePocetak.Location = new System.Drawing.Point(53, 250);
+            this.dateTimePocetak.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePocetak.Name = "dateTimePocetak";
-            this.dateTimePocetak.Size = new System.Drawing.Size(234, 20);
+            this.dateTimePocetak.Size = new System.Drawing.Size(311, 22);
             this.dateTimePocetak.TabIndex = 33;
             // 
             // dateTimeZavrsetak
             // 
             this.dateTimeZavrsetak.CustomFormat = "dd/MM/yyyy hh:mm tt";
             this.dateTimeZavrsetak.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimeZavrsetak.Location = new System.Drawing.Point(320, 203);
+            this.dateTimeZavrsetak.Location = new System.Drawing.Point(427, 250);
+            this.dateTimeZavrsetak.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimeZavrsetak.Name = "dateTimeZavrsetak";
-            this.dateTimeZavrsetak.Size = new System.Drawing.Size(234, 20);
+            this.dateTimeZavrsetak.Size = new System.Drawing.Size(311, 22);
             this.dateTimeZavrsetak.TabIndex = 35;
             // 
             // FormaDodajDogadjaj
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(600, 324);
+            this.ClientSize = new System.Drawing.Size(800, 399);
             this.Controls.Add(this.dateTimeZavrsetak);
             this.Controls.Add(this.dateTimePocetak);
             this.Controls.Add(this.label6);
@@ -209,10 +205,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxOpis);
             this.Controls.Add(this.textBoxNaziv);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormaDodajDogadjaj";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormaDodajDogadjaj";
+            this.Text = "Dodaj događaj";
             this.Load += new System.EventHandler(this.FormaDodajDogadjaj_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

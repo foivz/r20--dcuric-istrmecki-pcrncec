@@ -51,6 +51,10 @@ namespace Clubbing.Forme
                 BtnOdbij.Visible = false;
             }
             dgvRezervacije.Columns["IDRezervacija"].Visible = false;
+            dgvRezervacije.Columns[1].HeaderText = "Broj ljudi";
+            dgvRezervacije.Columns[2].HeaderText = "Stol";
+            dgvRezervacije.Columns[3].HeaderText = "Status";
+            dgvRezervacije.Columns[4].HeaderText = "Datum rezervacije";
         }
         private void BtnNovaRezervacija_Click(object sender, EventArgs e)
         {
@@ -99,6 +103,10 @@ namespace Clubbing.Forme
                 dgvRezervacije.DataSource = mojeRezervacije.Where(x => x.Status.Naziv == odabir).ToList();
             }
             dgvRezervacije.Columns["IDRezervacija"].Visible = false;
+            dgvRezervacije.Columns[1].HeaderText = "Broj ljudi";
+            dgvRezervacije.Columns[2].HeaderText = "Stol";
+            dgvRezervacije.Columns[3].HeaderText = "Status";
+            dgvRezervacije.Columns[4].HeaderText = "Datum rezervacije";
         }
 
         private void dgvRezervacije_CurrentCellChanged(object sender, EventArgs e)

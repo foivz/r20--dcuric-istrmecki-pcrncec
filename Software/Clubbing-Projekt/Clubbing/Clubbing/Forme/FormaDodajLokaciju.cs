@@ -1,4 +1,5 @@
 ﻿using Clubbing.Modeli;
+using ClubbingClassLibrary;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,10 +32,11 @@ namespace Clubbing.Forme
                     string inputGrad = textBoxGrad.Text;
                     string inputUlica = textBoxUlica.Text;
                     int inputPostankiBroj = Convert.ToInt32(textBoxPostanskiBroj.Text);
+                    Klub klubAdmina = Korisnik.PrijavljeniKorisnik.DohvatiKlubAdmina();
                     if (novaLokacija)
                     {
                         Lokacija lokacija = new Lokacija(inputGrad, inputUlica, inputPostankiBroj);
-                        lokacija.IDLokacija = lokacija.DodajLokacijuUBazu();
+                        klubAdmina.DodajLokacijuUBazu(inputGrad, inputUlica, inputPostankiBroj);
                         Korisnik.PrijavljeniKorisnik.DohvatiKlubAdmina().Lokacija = lokacija;
                     }
                     else
@@ -43,7 +45,7 @@ namespace Clubbing.Forme
                         lokacija.Grad = inputGrad;
                         lokacija.Ulica = inputUlica;
                         lokacija.PostanskiBroj = inputPostankiBroj;
-                        lokacija.AzurirajLokacijuUBazi();
+                        klubAdmina.AzurirajLokacijuUBazi();
                     }
                     this.Close();
                 }

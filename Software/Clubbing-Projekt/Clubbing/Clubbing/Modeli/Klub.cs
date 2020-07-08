@@ -10,6 +10,7 @@ using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using ClubbingClassLibrary;
 
 namespace Clubbing.Modeli
 {
@@ -20,7 +21,7 @@ namespace Clubbing.Modeli
         public int MaxKapacitet { get; set; }
         public Image Logo { get; set; }
         public int FKZanr { get; set; }
-        public Lokacija Lokacija { get; set; }
+        public ClubbingClassLibrary.Lokacija Lokacija { get; set; }
         public Korisnik AdminKluba { get; set; }
 
         public BindingList<Dogadjaj> Dogadjaji = new BindingList<Dogadjaj>();
@@ -92,7 +93,7 @@ namespace Clubbing.Modeli
                                 select l.Lokacija).FirstOrDefault();
                 if (lokacijaBaza != null)
                 {
-                    this.Lokacija = new Lokacija(lokacijaBaza.grad, lokacijaBaza.ulica, lokacijaBaza.postanski_broj);
+                    this.Lokacija = new ClubbingClassLibrary.Lokacija(lokacijaBaza.grad, lokacijaBaza.ulica, lokacijaBaza.postanski_broj);
                     this.Lokacija.IDLokacija = lokacijaBaza.id_lokacija;
                 }
                 else
@@ -186,6 +187,41 @@ namespace Clubbing.Modeli
                 entities.Klubs.Add(noviKlubBaza);
                 entities.SaveChanges();
                 return noviKlubBaza.id_klub;
+            }
+        }
+        public int DodajLokacijuUBazu(string grad, string ulica, int postanskiBroj)
+        {
+            using (Entities entities = new Entities())
+            {
+                Podaci.Lokacija lokacija = new Podaci.Lokacija()
+                {
+                    grad = grad,
+                    postanski_broj = postanskiBroj,
+                    ulica = ulica,
+                };
+                entities.Lokacijas.Add(lokacija);
+
+                entities.Klubs.Load();
+                var klub = (from k in entities.Klubs
+                            where k.id_klub == this.IDKlub
+                            select k).First();
+                klub.fk_lokacija = lokacija.id_lokacija;
+                entities.SaveChanges();
+                return lokacija.id_lokacija;
+            }
+        }
+        public void AzurirajLokacijuUBazi()
+        {
+            using (Entities entities = new Entities())
+            {
+                entities.Lokacijas.Load();
+                var lokacija = (from l in entities.Lokacijas
+                                where l.id_lokacija == this.Lokacija.IDLokacija
+                                select l).First();
+                lokacija.grad = this.Lokacija.Grad;
+                lokacija.postanski_broj = this.Lokacija.PostanskiBroj;
+                lokacija.ulica = this.Lokacija.Ulica;
+                entities.SaveChanges();
             }
         }
     }

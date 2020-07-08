@@ -44,19 +44,18 @@
             this.labelNaslov.AutoSize = true;
             this.labelNaslov.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNaslov.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelNaslov.Location = new System.Drawing.Point(30, 21);
-            this.labelNaslov.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelNaslov.Location = new System.Drawing.Point(40, 26);
             this.labelNaslov.Name = "labelNaslov";
-            this.labelNaslov.Size = new System.Drawing.Size(65, 17);
+            this.labelNaslov.Size = new System.Drawing.Size(75, 20);
             this.labelNaslov.TabIndex = 0;
             this.labelNaslov.Text = "Galerija";
             // 
             // BtnDodajSliku
             // 
-            this.BtnDodajSliku.Location = new System.Drawing.Point(33, 280);
-            this.BtnDodajSliku.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnDodajSliku.Location = new System.Drawing.Point(44, 345);
+            this.BtnDodajSliku.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnDodajSliku.Name = "BtnDodajSliku";
-            this.BtnDodajSliku.Size = new System.Drawing.Size(83, 32);
+            this.BtnDodajSliku.Size = new System.Drawing.Size(111, 39);
             this.BtnDodajSliku.TabIndex = 2;
             this.BtnDodajSliku.Text = "Dodaj sliku";
             this.BtnDodajSliku.UseVisualStyleBackColor = true;
@@ -64,10 +63,10 @@
             // 
             // BtnObrisiSliku
             // 
-            this.BtnObrisiSliku.Location = new System.Drawing.Point(134, 280);
-            this.BtnObrisiSliku.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnObrisiSliku.Location = new System.Drawing.Point(179, 345);
+            this.BtnObrisiSliku.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnObrisiSliku.Name = "BtnObrisiSliku";
-            this.BtnObrisiSliku.Size = new System.Drawing.Size(83, 32);
+            this.BtnObrisiSliku.Size = new System.Drawing.Size(111, 39);
             this.BtnObrisiSliku.TabIndex = 3;
             this.BtnObrisiSliku.Text = "Obriši sliku";
             this.BtnObrisiSliku.UseVisualStyleBackColor = true;
@@ -75,10 +74,10 @@
             // 
             // BtnPrethodna
             // 
-            this.BtnPrethodna.Location = new System.Drawing.Point(21, 345);
-            this.BtnPrethodna.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnPrethodna.Location = new System.Drawing.Point(28, 425);
+            this.BtnPrethodna.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnPrethodna.Name = "BtnPrethodna";
-            this.BtnPrethodna.Size = new System.Drawing.Size(83, 32);
+            this.BtnPrethodna.Size = new System.Drawing.Size(111, 39);
             this.BtnPrethodna.TabIndex = 4;
             this.BtnPrethodna.Text = "Povratak";
             this.BtnPrethodna.UseVisualStyleBackColor = true;
@@ -86,10 +85,10 @@
             // 
             // BtnSljedecaSlika
             // 
-            this.BtnSljedecaSlika.Location = new System.Drawing.Point(502, 304);
-            this.BtnSljedecaSlika.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnSljedecaSlika.Location = new System.Drawing.Point(669, 374);
+            this.BtnSljedecaSlika.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnSljedecaSlika.Name = "BtnSljedecaSlika";
-            this.BtnSljedecaSlika.Size = new System.Drawing.Size(62, 30);
+            this.BtnSljedecaSlika.Size = new System.Drawing.Size(83, 37);
             this.BtnSljedecaSlika.TabIndex = 5;
             this.BtnSljedecaSlika.Text = "->";
             this.BtnSljedecaSlika.UseVisualStyleBackColor = true;
@@ -97,10 +96,10 @@
             // 
             // BtnPrethodnaSlika
             // 
-            this.BtnPrethodnaSlika.Location = new System.Drawing.Point(416, 304);
-            this.BtnPrethodnaSlika.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnPrethodnaSlika.Location = new System.Drawing.Point(555, 374);
+            this.BtnPrethodnaSlika.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnPrethodnaSlika.Name = "BtnPrethodnaSlika";
-            this.BtnPrethodnaSlika.Size = new System.Drawing.Size(62, 30);
+            this.BtnPrethodnaSlika.Size = new System.Drawing.Size(83, 37);
             this.BtnPrethodnaSlika.TabIndex = 6;
             this.BtnPrethodnaSlika.Text = "<-";
             this.BtnPrethodnaSlika.UseVisualStyleBackColor = true;
@@ -113,9 +112,10 @@
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(33, 60);
+            this.pictureBox.Location = new System.Drawing.Point(44, 74);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(531, 192);
+            this.pictureBox.Size = new System.Drawing.Size(708, 236);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 7;
             this.pictureBox.TabStop = false;
@@ -124,10 +124,10 @@
             // 
             // FormaGalerija
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(600, 387);
+            this.ClientSize = new System.Drawing.Size(800, 476);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.BtnPrethodnaSlika);
             this.Controls.Add(this.BtnSljedecaSlika);
@@ -135,10 +135,10 @@
             this.Controls.Add(this.BtnObrisiSliku);
             this.Controls.Add(this.BtnDodajSliku);
             this.Controls.Add(this.labelNaslov);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormaGalerija";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormaGalerija";
+            this.Text = "Galerija";
             this.Load += new System.EventHandler(this.FormaGalerija_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);

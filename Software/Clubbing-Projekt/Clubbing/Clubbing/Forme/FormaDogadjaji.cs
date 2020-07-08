@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Clubbing.Forme;
+using ClubbingClassLibrary;
 
 namespace Clubbing.Forme
 {
@@ -46,8 +47,7 @@ namespace Clubbing.Forme
                 Klub klubAdmina = Korisnik.PrijavljeniKorisnik.DohvatiKlubAdmina();
                 if (klubAdmina != null)
                 {
-                    dgvDogadjaji.DataSource = klubAdmina.Dogadjaji;
-                    dgvDogadjaji.Columns["IDDogadjaj"].Visible = false;
+                    PrikaziDgv(klubAdmina.Dogadjaji);
                 }
                 else
                 {
@@ -60,11 +60,27 @@ namespace Clubbing.Forme
                 BindingList<Dogadjaj> dogadjaji = Korisnik.PrijavljeniKorisnik.DohvatiKlijentoveDogadjaje();
                 if (dogadjaji != null)
                 {
-                    dgvDogadjaji.DataSource = dogadjaji;
-                    dgvDogadjaji.Columns["IDDogadjaj"].Visible = false;
+                    PrikaziDgv(dogadjaji);
                 }
             }
 
+        }
+        private void PrikaziDgv(BindingList<Dogadjaj> dogadjaji)
+        {
+            if (dgvDogadjaji != null)
+            {
+                if (dogadjaji != null)
+                {
+                    dgvDogadjaji.DataSource = dogadjaji;
+                }
+                dgvDogadjaji.Columns["IDDogadjaj"].Visible = false;
+                dgvDogadjaji.Columns[1].HeaderText = "Naziv događaja";
+                dgvDogadjaji.Columns[2].HeaderText = "Opis";
+                dgvDogadjaji.Columns[3].HeaderText = "Datum početka";
+                dgvDogadjaji.Columns[4].HeaderText = "Datum završetka";
+                dgvDogadjaji.Columns[5].HeaderText = "Cijena ulaznice";
+                dgvDogadjaji.Columns[6].HeaderText = "Maksimalno rezervacija";
+            }
         }
         private void BtnObrisiDogadjaj_Click(object sender, EventArgs e)
         {
@@ -130,14 +146,13 @@ namespace Clubbing.Forme
             {
                 if (Dogadjaj.trenutniDogadjaj != null)
                 {
-                    if (Dogadjaj.trenutniDogadjaj.Zavrseni())
+                    if (DogadjajLib.Zavrseni(Dogadjaj.trenutniDogadjaj.DatumZavrsetka))
                     {
                         FormaDodajRecenziju formaDodajRecenziju = new FormaDodajRecenziju(false);
                         formaDodajRecenziju.ShowDialog();
                     }
                     else
                     {
-                        // TODO: DODATI DA SE NE MOŽE OCIJENITI DOGAĐAJ NA KOJEM KORISNIK NIJE BIO
                         MessageBox.Show("Ne možete ocijeniti događaj koji još nije završen!");
                     }
                 }
@@ -195,13 +210,13 @@ namespace Clubbing.Forme
             }
             else if (radioBtnZavrseni.Checked)
             {
-                dgvDogadjaji.DataSource = dogadjaji.Where(x => x.Zavrseni()).ToList();
+                dgvDogadjaji.DataSource = dogadjaji.Where(x => DogadjajLib.Zavrseni(x.DatumZavrsetka)).ToList();
             }
             else if (radioBtnNadolazeci.Checked)
             {
-                dgvDogadjaji.DataSource = dogadjaji.Where(x => x.Nadolazeci()).ToList();
+                dgvDogadjaji.DataSource = dogadjaji.Where(x => DogadjajLib.Nadolazeci(x.DatumPocetka)).ToList();
             }
-            dgvDogadjaji.Columns["IDDogadjaj"].Visible = false;
+            PrikaziDgv(null);
         }
     }
 }

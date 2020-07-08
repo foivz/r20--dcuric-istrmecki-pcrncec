@@ -23,7 +23,7 @@ namespace Clubbing
         {
             InitializeComponent();
         }
-        private bool ValidacijaPrijave()
+        private bool ValidacijaPodataka()
         {
             using(Entities entities = new Entities())
             {
@@ -58,15 +58,9 @@ namespace Clubbing
 
         private void BtnPrijava_Click(object sender, EventArgs e)
         {
-            inputKorisnickoIme = textBoxUsername.Text;
-            inputLozinka = textBoxPassword.Text;
-            if(string.IsNullOrEmpty(inputKorisnickoIme) || string.IsNullOrEmpty(inputLozinka))
-            {
-                MessageBox.Show("Niste unijeli sve potrebne podatke za prijavu!");
-            }
-            else
-            { 
-                if (ValidacijaPrijave())
+            if (ValidacijaPrijave())
+            {          
+                if (ValidacijaPodataka())
                 {
                     this.Hide();
                     FormaGlavniMeni glavnaForma = new FormaGlavniMeni();
@@ -77,6 +71,18 @@ namespace Clubbing
                     MessageBox.Show("Unijeli ste krive podatke za prijavu");
                 }
             }
+        }
+
+        private bool ValidacijaPrijave()
+        {
+            inputKorisnickoIme = textBoxUsername.Text;
+            inputLozinka = textBoxPassword.Text;
+            if (string.IsNullOrEmpty(inputKorisnickoIme) || string.IsNullOrEmpty(inputLozinka))
+            {
+                MessageBox.Show("Niste unijeli sve potrebne podatke za prijavu!");
+                return false;
+            }
+            return true;
         }
     }
 }

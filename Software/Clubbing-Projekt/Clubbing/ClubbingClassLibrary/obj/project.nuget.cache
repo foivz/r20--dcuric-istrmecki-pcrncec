@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZYLBwS9w6za8ulhdlN6mCkg2fNq0er5pBaCQ6KDe3UsUw/PrSvMsCVJ/61v7APBVscyDCSDYdPS7+PqIZEEP5A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Patrik\\Desktop\\r20--dcuric-istrmecki-pcrncec-master\\Software\\Clubbing-Projekt\\Clubbing\\ClubbingClassLibrary\\ClubbingClassLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Patrik\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Patrik\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

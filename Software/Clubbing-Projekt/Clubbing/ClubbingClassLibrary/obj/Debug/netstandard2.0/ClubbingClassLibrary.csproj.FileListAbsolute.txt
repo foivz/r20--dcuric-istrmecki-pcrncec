@@ -1,0 +1,9 @@
+C:\Users\Patrik\Desktop\r20--dcuric-istrmecki-pcrncec-master\Software\Clubbing-Projekt\Clubbing\ClubbingClassLibrary\obj\Debug\netstandard2.0\ClubbingClassLibrary.csprojAssemblyReference.cache
+C:\Users\Patrik\Desktop\r20--dcuric-istrmecki-pcrncec-master\Software\Clubbing-Projekt\Clubbing\ClubbingClassLibrary\obj\Debug\netstandard2.0\ClubbingClassLibrary.AssemblyInfoInputs.cache
+C:\Users\Patrik\Desktop\r20--dcuric-istrmecki-pcrncec-master\Software\Clubbing-Projekt\Clubbing\ClubbingClassLibrary\obj\Debug\netstandard2.0\ClubbingClassLibrary.AssemblyInfo.cs
+C:\Users\Patrik\Desktop\r20--dcuric-istrmecki-pcrncec-master\Software\Clubbing-Projekt\Clubbing\ClubbingClassLibrary\obj\Debug\netstandard2.0\ClubbingClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Patrik\Desktop\r20--dcuric-istrmecki-pcrncec-master\Software\Clubbing-Projekt\Clubbing\ClubbingClassLibrary\bin\Debug\netstandard2.0\ClubbingClassLibrary.deps.json
+C:\Users\Patrik\Desktop\r20--dcuric-istrmecki-pcrncec-master\Software\Clubbing-Projekt\Clubbing\ClubbingClassLibrary\bin\Debug\netstandard2.0\ClubbingClassLibrary.dll
+C:\Users\Patrik\Desktop\r20--dcuric-istrmecki-pcrncec-master\Software\Clubbing-Projekt\Clubbing\ClubbingClassLibrary\bin\Debug\netstandard2.0\ClubbingClassLibrary.pdb
+C:\Users\Patrik\Desktop\r20--dcuric-istrmecki-pcrncec-master\Software\Clubbing-Projekt\Clubbing\ClubbingClassLibrary\obj\Debug\netstandard2.0\ClubbingClassLibrary.dll
+C:\Users\Patrik\Desktop\r20--dcuric-istrmecki-pcrncec-master\Software\Clubbing-Projekt\Clubbing\ClubbingClassLibrary\obj\Debug\netstandard2.0\ClubbingClassLibrary.pdb

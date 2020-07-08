@@ -46,6 +46,8 @@ namespace Clubbing.Forme
             if (dgvObavijesti.DataSource != null)
             {
                 dgvObavijesti.Columns["IDObavijest"].Visible = false;
+                dgvObavijesti.Columns[1].HeaderText = "Opis obavijesti";
+                dgvObavijesti.Columns[2].HeaderText = "Datum obavijesti";
             }
         }
         private void BtnDodajObavijest_Click(object sender, EventArgs e)

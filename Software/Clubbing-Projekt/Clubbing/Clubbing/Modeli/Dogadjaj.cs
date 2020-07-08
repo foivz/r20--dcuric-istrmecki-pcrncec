@@ -1,4 +1,5 @@
 ﻿using Clubbing.Podaci;
+using ClubbingClassLibrary;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -52,20 +53,6 @@ namespace Clubbing.Modeli
             {
                 return null;
             }
-        }
-        public bool Nadolazeci()
-        {
-            // na temelju datumaPocetka se određuje da li je neki objekt klase dogadjaj nadolazeci ili ne
-            // uspoređuje se s trenutnim datumom i vremenom
-            int rez = DateTime.Compare(DateTime.Now, this.DatumPocetka);
-            return rez < 0;
-        }
-        public bool Zavrseni()
-        {
-            // na temelju datumaZavrsetka se određuje da li je neki objekt klase dogadjaj vec završen ili ne
-            // uspoređuje se s trenutnim datumom i vremenom
-            int rez = DateTime.Compare(DateTime.Now, this.DatumZavrsetka);
-            return rez > 0;
         }
         public void DodajSlikuUBazu(Image slika)
         {
@@ -155,7 +142,7 @@ namespace Clubbing.Modeli
             {
                 foreach (Dogadjaj dogadjaj in klub.Dogadjaji)
                 {
-                    if (dogadjaj.Nadolazeci() && dogadjaj.Rezervacije.Count != dogadjaj.Stolovi.Count)
+                    if (DogadjajLib.Nadolazeci(dogadjaj.DatumPocetka) && dogadjaj.Rezervacije.Count != dogadjaj.Stolovi.Count)
                     {
                         dogadjaji.Add(dogadjaj);
                     }

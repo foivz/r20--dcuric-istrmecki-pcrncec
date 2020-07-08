@@ -45,8 +45,7 @@
             this.labelMaxKapacitet.AutoSize = true;
             this.labelMaxKapacitet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMaxKapacitet.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelMaxKapacitet.Location = new System.Drawing.Point(22, 76);
-            this.labelMaxKapacitet.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelMaxKapacitet.Location = new System.Drawing.Point(29, 94);
             this.labelMaxKapacitet.Name = "labelMaxKapacitet";
             this.labelMaxKapacitet.Size = new System.Drawing.Size(187, 20);
             this.labelMaxKapacitet.TabIndex = 1;
@@ -57,8 +56,7 @@
             this.labelImeKluba.AutoSize = true;
             this.labelImeKluba.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelImeKluba.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelImeKluba.Location = new System.Drawing.Point(22, 30);
-            this.labelImeKluba.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelImeKluba.Location = new System.Drawing.Point(29, 37);
             this.labelImeKluba.Name = "labelImeKluba";
             this.labelImeKluba.Size = new System.Drawing.Size(101, 20);
             this.labelImeKluba.TabIndex = 3;
@@ -66,10 +64,10 @@
             // 
             // BtnOcijeni
             // 
-            this.BtnOcijeni.Location = new System.Drawing.Point(36, 192);
-            this.BtnOcijeni.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnOcijeni.Location = new System.Drawing.Point(48, 236);
+            this.BtnOcijeni.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnOcijeni.Name = "BtnOcijeni";
-            this.BtnOcijeni.Size = new System.Drawing.Size(119, 38);
+            this.BtnOcijeni.Size = new System.Drawing.Size(159, 47);
             this.BtnOcijeni.TabIndex = 6;
             this.BtnOcijeni.Text = "Dodaj recenziju";
             this.BtnOcijeni.UseVisualStyleBackColor = true;
@@ -77,10 +75,10 @@
             // 
             // BtnPrati
             // 
-            this.BtnPrati.Location = new System.Drawing.Point(230, 192);
-            this.BtnPrati.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnPrati.Location = new System.Drawing.Point(307, 236);
+            this.BtnPrati.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnPrati.Name = "BtnPrati";
-            this.BtnPrati.Size = new System.Drawing.Size(106, 38);
+            this.BtnPrati.Size = new System.Drawing.Size(141, 47);
             this.BtnPrati.TabIndex = 7;
             this.BtnPrati.Text = "Zaprati klub";
             this.BtnPrati.UseVisualStyleBackColor = true;
@@ -88,10 +86,10 @@
             // 
             // BtnPovratak
             // 
-            this.BtnPovratak.Location = new System.Drawing.Point(25, 303);
-            this.BtnPovratak.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnPovratak.Location = new System.Drawing.Point(33, 373);
+            this.BtnPovratak.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnPovratak.Name = "BtnPovratak";
-            this.BtnPovratak.Size = new System.Drawing.Size(107, 38);
+            this.BtnPovratak.Size = new System.Drawing.Size(143, 47);
             this.BtnPovratak.TabIndex = 9;
             this.BtnPovratak.Text = "Povratak";
             this.BtnPovratak.UseVisualStyleBackColor = true;
@@ -99,10 +97,10 @@
             // 
             // BtnLokacija
             // 
-            this.BtnLokacija.Location = new System.Drawing.Point(417, 192);
-            this.BtnLokacija.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnLokacija.Location = new System.Drawing.Point(556, 236);
+            this.BtnLokacija.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnLokacija.Name = "BtnLokacija";
-            this.BtnLokacija.Size = new System.Drawing.Size(117, 38);
+            this.BtnLokacija.Size = new System.Drawing.Size(156, 47);
             this.BtnLokacija.TabIndex = 10;
             this.BtnLokacija.Text = "Prikaži lokaciju";
             this.BtnLokacija.UseVisualStyleBackColor = true;
@@ -110,10 +108,10 @@
             // 
             // BtnOtvoriDogadjaje
             // 
-            this.BtnOtvoriDogadjaje.Location = new System.Drawing.Point(435, 303);
-            this.BtnOtvoriDogadjaje.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnOtvoriDogadjaje.Location = new System.Drawing.Point(580, 373);
+            this.BtnOtvoriDogadjaje.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnOtvoriDogadjaje.Name = "BtnOtvoriDogadjaje";
-            this.BtnOtvoriDogadjaje.Size = new System.Drawing.Size(140, 38);
+            this.BtnOtvoriDogadjaje.Size = new System.Drawing.Size(187, 47);
             this.BtnOtvoriDogadjaje.TabIndex = 11;
             this.BtnOtvoriDogadjaje.Text = "Pregled događaja";
             this.BtnOtvoriDogadjaje.UseVisualStyleBackColor = true;
@@ -124,8 +122,7 @@
             this.labelAdmin.AutoSize = true;
             this.labelAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAdmin.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelAdmin.Location = new System.Drawing.Point(22, 124);
-            this.labelAdmin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelAdmin.Location = new System.Drawing.Point(29, 153);
             this.labelAdmin.Name = "labelAdmin";
             this.labelAdmin.Size = new System.Drawing.Size(123, 20);
             this.labelAdmin.TabIndex = 12;
@@ -133,19 +130,20 @@
             // 
             // pictureBoxLogo
             // 
-            this.pictureBoxLogo.Location = new System.Drawing.Point(332, 12);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(443, 15);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(235, 150);
+            this.pictureBoxLogo.Size = new System.Drawing.Size(313, 185);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLogo.TabIndex = 13;
             this.pictureBoxLogo.TabStop = false;
             // 
             // FormaKlub
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.labelAdmin);
             this.Controls.Add(this.BtnOtvoriDogadjaje);
@@ -155,10 +153,10 @@
             this.Controls.Add(this.BtnOcijeni);
             this.Controls.Add(this.labelImeKluba);
             this.Controls.Add(this.labelMaxKapacitet);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormaKlub";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormaKlub";
+            this.Text = "Klub";
             this.Load += new System.EventHandler(this.FormaKlub_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);

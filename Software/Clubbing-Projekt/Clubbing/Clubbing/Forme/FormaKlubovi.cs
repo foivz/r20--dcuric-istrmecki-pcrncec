@@ -178,6 +178,9 @@ namespace Clubbing.Forme
             dataGridViewKlubovi.Columns["Logo"].Visible = false;
             dataGridViewKlubovi.Columns["FKZanr"].Visible = false;
             dataGridViewKlubovi.Columns["Lokacija"].Visible = false;
+            dataGridViewKlubovi.Columns[1].HeaderText = "Ime kluba";
+            dataGridViewKlubovi.Columns[2].HeaderText = "Maksimalni kapacitet";
+            dataGridViewKlubovi.Columns[6].HeaderText = "Admin kluba";
         }
         private void BtnOtvoriKlub_Click(object sender, EventArgs e)
         {

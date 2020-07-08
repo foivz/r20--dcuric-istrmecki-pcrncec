@@ -218,7 +218,7 @@
             this.Controls.Add(this.labelUsername);
             this.Name = "FormaRegistracija";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormaRegistracija";
+            this.Text = "Registracija";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -46,22 +46,21 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(37, 22);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(49, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 17);
+            this.label1.Size = new System.Drawing.Size(111, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Svi događaji";
             // 
             // dgvDogadjaji
             // 
             this.dgvDogadjaji.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDogadjaji.Location = new System.Drawing.Point(40, 59);
-            this.dgvDogadjaji.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvDogadjaji.Location = new System.Drawing.Point(53, 73);
+            this.dgvDogadjaji.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDogadjaji.Name = "dgvDogadjaji";
             this.dgvDogadjaji.RowHeadersWidth = 51;
             this.dgvDogadjaji.RowTemplate.Height = 24;
-            this.dgvDogadjaji.Size = new System.Drawing.Size(612, 136);
+            this.dgvDogadjaji.Size = new System.Drawing.Size(816, 167);
             this.dgvDogadjaji.TabIndex = 1;
             this.dgvDogadjaji.CurrentCellChanged += new System.EventHandler(this.dgvDogadjaji_CurrentCellChanged);
             // 
@@ -69,10 +68,10 @@
             // 
             this.radioBtnNadolazeci.AutoSize = true;
             this.radioBtnNadolazeci.ForeColor = System.Drawing.Color.Gainsboro;
-            this.radioBtnNadolazeci.Location = new System.Drawing.Point(538, 23);
-            this.radioBtnNadolazeci.Margin = new System.Windows.Forms.Padding(2);
+            this.radioBtnNadolazeci.Location = new System.Drawing.Point(717, 28);
+            this.radioBtnNadolazeci.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioBtnNadolazeci.Name = "radioBtnNadolazeci";
-            this.radioBtnNadolazeci.Size = new System.Drawing.Size(78, 17);
+            this.radioBtnNadolazeci.Size = new System.Drawing.Size(99, 21);
             this.radioBtnNadolazeci.TabIndex = 12;
             this.radioBtnNadolazeci.TabStop = true;
             this.radioBtnNadolazeci.Text = "Nadolazeći";
@@ -83,10 +82,10 @@
             // 
             this.radioBtnZavrseni.AutoSize = true;
             this.radioBtnZavrseni.ForeColor = System.Drawing.Color.Gainsboro;
-            this.radioBtnZavrseni.Location = new System.Drawing.Point(375, 23);
-            this.radioBtnZavrseni.Margin = new System.Windows.Forms.Padding(2);
+            this.radioBtnZavrseni.Location = new System.Drawing.Point(500, 28);
+            this.radioBtnZavrseni.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioBtnZavrseni.Name = "radioBtnZavrseni";
-            this.radioBtnZavrseni.Size = new System.Drawing.Size(66, 17);
+            this.radioBtnZavrseni.Size = new System.Drawing.Size(84, 21);
             this.radioBtnZavrseni.TabIndex = 11;
             this.radioBtnZavrseni.TabStop = true;
             this.radioBtnZavrseni.Text = "Završeni";
@@ -96,10 +95,10 @@
             // BtnRezerviraj
             // 
             this.BtnRezerviraj.ForeColor = System.Drawing.Color.Black;
-            this.BtnRezerviraj.Location = new System.Drawing.Point(102, 224);
-            this.BtnRezerviraj.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnRezerviraj.Location = new System.Drawing.Point(136, 276);
+            this.BtnRezerviraj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnRezerviraj.Name = "BtnRezerviraj";
-            this.BtnRezerviraj.Size = new System.Drawing.Size(92, 32);
+            this.BtnRezerviraj.Size = new System.Drawing.Size(123, 39);
             this.BtnRezerviraj.TabIndex = 13;
             this.BtnRezerviraj.Text = "Rezerviraj";
             this.BtnRezerviraj.UseVisualStyleBackColor = true;
@@ -108,10 +107,10 @@
             // BtnGalerijaDogadjaja
             // 
             this.BtnGalerijaDogadjaja.ForeColor = System.Drawing.Color.Black;
-            this.BtnGalerijaDogadjaja.Location = new System.Drawing.Point(303, 224);
-            this.BtnGalerijaDogadjaja.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnGalerijaDogadjaja.Location = new System.Drawing.Point(404, 276);
+            this.BtnGalerijaDogadjaja.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnGalerijaDogadjaja.Name = "BtnGalerijaDogadjaja";
-            this.BtnGalerijaDogadjaja.Size = new System.Drawing.Size(114, 32);
+            this.BtnGalerijaDogadjaja.Size = new System.Drawing.Size(152, 39);
             this.BtnGalerijaDogadjaja.TabIndex = 14;
             this.BtnGalerijaDogadjaja.Text = "Prikaži galeriju";
             this.BtnGalerijaDogadjaja.UseVisualStyleBackColor = true;
@@ -120,10 +119,10 @@
             // BtnPovratak
             // 
             this.BtnPovratak.ForeColor = System.Drawing.Color.Black;
-            this.BtnPovratak.Location = new System.Drawing.Point(40, 301);
-            this.BtnPovratak.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnPovratak.Location = new System.Drawing.Point(53, 370);
+            this.BtnPovratak.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnPovratak.Name = "BtnPovratak";
-            this.BtnPovratak.Size = new System.Drawing.Size(92, 32);
+            this.BtnPovratak.Size = new System.Drawing.Size(123, 39);
             this.BtnPovratak.TabIndex = 15;
             this.BtnPovratak.Text = "Nazad";
             this.BtnPovratak.UseVisualStyleBackColor = true;
@@ -134,10 +133,10 @@
             this.radioBtnSvi.AutoSize = true;
             this.radioBtnSvi.Checked = true;
             this.radioBtnSvi.ForeColor = System.Drawing.Color.Gainsboro;
-            this.radioBtnSvi.Location = new System.Drawing.Point(230, 23);
-            this.radioBtnSvi.Margin = new System.Windows.Forms.Padding(2);
+            this.radioBtnSvi.Location = new System.Drawing.Point(307, 28);
+            this.radioBtnSvi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioBtnSvi.Name = "radioBtnSvi";
-            this.radioBtnSvi.Size = new System.Drawing.Size(40, 17);
+            this.radioBtnSvi.Size = new System.Drawing.Size(48, 21);
             this.radioBtnSvi.TabIndex = 16;
             this.radioBtnSvi.TabStop = true;
             this.radioBtnSvi.Text = "Svi";
@@ -147,10 +146,10 @@
             // BtnOtvoriKlub
             // 
             this.BtnOtvoriKlub.ForeColor = System.Drawing.Color.Black;
-            this.BtnOtvoriKlub.Location = new System.Drawing.Point(560, 301);
-            this.BtnOtvoriKlub.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnOtvoriKlub.Location = new System.Drawing.Point(747, 370);
+            this.BtnOtvoriKlub.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnOtvoriKlub.Name = "BtnOtvoriKlub";
-            this.BtnOtvoriKlub.Size = new System.Drawing.Size(92, 32);
+            this.BtnOtvoriKlub.Size = new System.Drawing.Size(123, 39);
             this.BtnOtvoriKlub.TabIndex = 17;
             this.BtnOtvoriKlub.Text = "Otvori klub";
             this.BtnOtvoriKlub.UseVisualStyleBackColor = true;
@@ -159,10 +158,10 @@
             // btnFiltriraj
             // 
             this.btnFiltriraj.ForeColor = System.Drawing.Color.Black;
-            this.btnFiltriraj.Location = new System.Drawing.Point(524, 224);
-            this.btnFiltriraj.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFiltriraj.Location = new System.Drawing.Point(699, 276);
+            this.btnFiltriraj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFiltriraj.Name = "btnFiltriraj";
-            this.btnFiltriraj.Size = new System.Drawing.Size(92, 32);
+            this.btnFiltriraj.Size = new System.Drawing.Size(123, 39);
             this.btnFiltriraj.TabIndex = 18;
             this.btnFiltriraj.Text = "Filtriraj";
             this.btnFiltriraj.UseVisualStyleBackColor = true;
@@ -170,10 +169,10 @@
             // 
             // FormaPregledSvihDogadjaja
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(685, 354);
+            this.ClientSize = new System.Drawing.Size(913, 436);
             this.Controls.Add(this.btnFiltriraj);
             this.Controls.Add(this.BtnOtvoriKlub);
             this.Controls.Add(this.radioBtnSvi);
@@ -185,10 +184,10 @@
             this.Controls.Add(this.dgvDogadjaji);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormaPregledSvihDogadjaja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormaPregledSvihDogadjaja";
+            this.Text = "Pregled svih događaja";
             this.Load += new System.EventHandler(this.FormaPregledSvihDogadjaja_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDogadjaji)).EndInit();
             this.ResumeLayout(false);
