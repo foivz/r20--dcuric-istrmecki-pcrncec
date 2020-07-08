@@ -111,6 +111,7 @@
             this.textBoxLozinka.Name = "textBoxLozinka";
             this.textBoxLozinka.Size = new System.Drawing.Size(251, 30);
             this.textBoxLozinka.TabIndex = 16;
+            this.textBoxLozinka.UseSystemPasswordChar = true;
             // 
             // textBoxKorisnickoIme
             // 
@@ -154,6 +155,7 @@
             this.textBoxLozinka2.Name = "textBoxLozinka2";
             this.textBoxLozinka2.Size = new System.Drawing.Size(251, 30);
             this.textBoxLozinka2.TabIndex = 18;
+            this.textBoxLozinka2.UseSystemPasswordChar = true;
             // 
             // labelPotvrdaLoznike
             // 
